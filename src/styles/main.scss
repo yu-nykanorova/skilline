@@ -1,0 +1,11 @@
+@import './utils/reset';
+@import './utils/vars';
+@import './utils/mixins';
+@import './utils/base';
+
+@import './shared/footer';
+@import './shared/header';
+
+@import './pages/home/home';
+@import './pages/notFound/notFound';
+
