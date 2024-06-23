@@ -6,10 +6,22 @@ html {
 html,body {
 	height: 100%;
 }
+
 body {
 	font-size: 16rem;
+	font-family: var(--font-family);
 }
 
 #root {
 	height: 100%;
+	position: relative;
+}
+
+.container {
+	max-width: 1920rem;
+	padding: 0 126rem 0 100rem;
+}
+
+.mi {
+	margin-inline: auto;
 }

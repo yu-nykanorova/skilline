@@ -1,11 +1,23 @@
+//utils
 @import './utils/reset';
 @import './utils/vars';
 @import './utils/mixins';
 @import './utils/base';
 
+//shared
 @import './shared/footer';
 @import './shared/header';
 
+@import './shared/components/logo';
+
+//pages
 @import './pages/home/home';
+@import './pages/home/welcome';
+@import './pages/home/allinone';
+@import './pages/home/description';
+@import './pages/home/features';
+@import './pages/home/testimonial';
+@import './pages/home/news';
+
 @import './pages/notFound/notFound';
 
