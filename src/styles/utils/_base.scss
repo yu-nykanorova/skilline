@@ -14,14 +14,26 @@ body {
 
 #root {
 	height: 100%;
+}
+
+.page-wrapper {
 	position: relative;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
 }
 
 .container {
 	max-width: 1920rem;
 	padding: 0 126rem 0 100rem;
+	border: 2px solid darkmagenta;
 }
 
 .mi {
 	margin-inline: auto;
+}
+
+.link {
+	color: var(--c-black);
+	text-decoration: none;
+	cursor: pointer;
 }

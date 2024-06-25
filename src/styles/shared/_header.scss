@@ -1,3 +1,55 @@
 .header {
     background: var(--c-orange-light-first);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    &-container {
+        padding: 60rem 0 28rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__nav, &__menu {
+        display: flex;
+        gap: 80rem;
+        align-items: center;
+    }
+
+    &__menu {}
+
+    &__link {
+        font-weight: 400;
+        font-size: 22rem;
+        letter-spacing: 0.02em;
+        color: var(--c-grey-menu);
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 34rem;
+        align-items: center;
+    }
+
+    &__login-button, &__signup-button {
+        font-weight: 500;
+        font-size: 22rem;
+        letter-spacing: 0.02em;
+        border-radius: 80rem;
+    }
+
+    &__login-button {
+        padding: 13rem 49rem;
+        color: var(--c-grey-login-button);
+        background: var(--c-white);
+        box-shadow: 0 20px 24px 0 rgba(0, 0, 0, 0.03);
+    }
+
+    &__signup-button {
+        padding: 13rem 36rem;
+        color: var(--c-white);
+        background: var(--c-orange-first);
+    }
 }

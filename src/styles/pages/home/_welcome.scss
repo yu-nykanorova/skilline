@@ -1,7 +1,137 @@
 .welcome {
     background: var(--c-orange-light-first);
-}
 
-.welcome-container {
-    border: 2px solid red;
+    &-container {
+        padding-top: 249rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        padding: 86rem 26rem 379rem 40rem;
+        flex: 50%;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 54rem;
+        color: var(--c-blue-dark-first);
+        margin-bottom: 34rem;
+        span {
+            color: var(--c-orange-first);
+        }
+    }
+
+    &__desc {
+        max-width: 525rem;
+        font-weight: 400;
+        font-size: 24rem;
+        line-height: 160%;
+        color: var(--c-grey-desc-second);
+        margin-bottom: 52rem;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        gap: 40rem;
+    }
+
+    &__join-button {
+        font-weight: 600;
+        font-size: 24rem;
+        color: var(--c-white);    
+        padding: 22rem 38rem;
+        border-radius: 80rem;
+        background: var(--c-orange-first);
+    }
+
+    &__watch-button-box {
+        display: flex;
+        align-items: center;
+        gap: 32rem;
+    }
+
+    &__watch-button-desc {
+        font-weight: 400;
+        font-size: 24rem;
+        color: var(--c-grey-menu);
+    }
+
+    &__image {
+        flex: 50%;
+        display: flex;
+        position: relative;
+        img {
+            height: 100%;
+            margin-inline: auto;
+        }
+
+        .icon-rating {
+            position: absolute;
+            top: 90rem;
+            right: -20rem;
+        }
+
+        .container-white-content {
+            display: flex;
+            align-items: center;
+            gap: 26rem;
+
+            .container-white-comment {
+                .container-white-title {
+                    font-family: var(--second-family);
+                    font-weight: 700;
+                    font-size: 24rem;
+                    line-height: 150%;
+                    letter-spacing: 0.02em;
+                    color: var(--c-grey-title-first);
+                }
+
+                .container-white-desc {
+                    font-family: var(--second-family);
+                    font-weight: 600;
+                    font-size: 20rem;
+                    line-height: 150%;
+                    letter-spacing: 0.02em;
+                    color: var(--c-grey-desc-third);
+                }
+            }
+        }
+
+        .container-white-first {
+            position: absolute;
+            top: 190rem;
+            left: -50rem;
+            padding: 15rem 28rem;
+        }
+
+        .container-white-second {
+            position: absolute;
+            top: 380rem;
+            right: -20rem;
+            padding: 20rem;
+        }
+
+        .container-white-third {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            gap: 19rem;
+            bottom: 175rem;
+            left: -60rem;
+            padding: 26rem;
+
+            .container-white-button {
+                padding: 12rem 47rem;
+                font-family: var(--second-family);
+                font-weight: 700;
+                font-size: 20rem;
+                color: var(--c-white);
+                background: var(--c-red-first);
+                border-radius: 80rem;
+                align-self: center;
+            }
+        }
+    }
 }
