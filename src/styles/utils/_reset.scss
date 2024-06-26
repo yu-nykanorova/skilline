@@ -167,6 +167,12 @@
    * 2. Remove the margin in Firefox and Safari.
    */
   
+  button {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+  }
+
   button,
   input,
   optgroup,

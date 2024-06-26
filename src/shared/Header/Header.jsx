@@ -7,7 +7,7 @@ export const Header = () => {
     <header className="header">
       <div className="container mi header-container">
         <div className="header__logo">
-          <Logo isFilled={true} />
+          <Logo isFilled={true} isWhite={false} />
         </div>
         <div className="header__nav">
           <div className="header__menu">

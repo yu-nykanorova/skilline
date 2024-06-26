@@ -3,7 +3,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    max-width: 150rem;
+    width: 156rem;
+    padding: 4rem;
     cursor: pointer;
 
     svg {
@@ -11,11 +12,18 @@
         left: 1rem;
     }
 
-    .logo-name {
+    .logo-name, .logo-name-white {
         font-weight: 700;
         font-size: 32rem;
-        letter-spacing: 0.04em;
-        color: var(--c-blue-dark-third);
+        letter-spacing: 0.04em;  
         z-index: 1;
+    }
+
+    .logo-name {
+        color: var(--c-blue-dark-third);
+    }
+
+    .logo-name-white {
+        color: var(--c-white);
     }
 }

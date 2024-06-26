@@ -1,3 +1,133 @@
 .footer {
-    background: palegoldenrod;
+    background: var(--c-blue-dark-second);
+
+    &-container {
+        padding: 74rem 60rem 40rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 95rem;
+
+    }
+
+    &__logo-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 83rem;
+        max-width: 400rem;
+    }
+
+    &__logo {}
+
+    &__company-desc {
+        font-weight: 600;
+        font-size: 22rem;
+        letter-spacing: 0.04em;
+        color: var(--c-white);
+        position: relative;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -9rem;
+            left: -41rem;
+            width: 1rem;
+            height: 83rem;
+            background: #626381;
+        }
+    }
+
+    &__subscribe {
+
+        .subscribe-title {
+            font-weight: 500;
+            font-size: 26rem;
+            letter-spacing: 0.04em;
+            text-align: center;
+            color: var(--c-grey-subscribe);
+            margin-bottom: 20rem;
+            padding: 0 80rem;
+        }
+
+        .subscribe-data {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 600rem;
+            .subscribe-email {
+                font-weight: 400;
+                font-size: 22rem;
+                letter-spacing: 0.04em;
+                color: var(--c-white);
+                background: transparent;
+                outline: 0;
+                border: 1px solid var(--c-grey-subscribe-email);
+                border-radius: 80rem;
+                padding: 15rem 30rem;
+                width: 66%;
+                &::placeholder {
+                    font-weight: 400;
+                    font-size: 20rem;
+                    letter-spacing: 0.04em;
+                    color: var(--c-grey-subscribe-email);
+                }
+            }
+
+            .subscribe-button {
+                padding: 14rem 34rem;
+                border-radius: 60rem;
+                background: linear-gradient(157deg, #545ae7 0%, #393fcf 100%);
+                font-weight: 500;
+                font-size: 22rem;
+                color: var(--c-white);
+            }
+        }
+    }
+
+    &__info {
+
+        &-menu {
+            display: flex;
+            align-items: center;
+            gap: 41rem;
+        }
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: 22rem;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: var(--c-grey-subscribe);
+        position: relative;
+        &:nth-child(2)::before, &:nth-child(2)::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 1rem;
+            height: 17rem;
+            background: #626381;
+        }
+
+        &:nth-child(2)::before {
+            top: 8rem;
+            left: -21rem;
+        }
+
+        &:nth-child(2)::after {
+            top: 8rem;
+            right: -21rem;
+        }
+    }
+
+    &__copyright {
+        font-weight: 400;
+        font-size: 22rem;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: var(--c-grey-subscribe);
+    }
+    
 }
