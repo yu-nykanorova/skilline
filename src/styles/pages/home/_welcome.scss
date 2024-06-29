@@ -9,7 +9,7 @@
 
     &__info {
         padding: 86rem 26rem 379rem 40rem;
-        flex: 50%;
+        flex: 45%;
     }
 
     &__title {
@@ -59,9 +59,10 @@
     }
 
     &__image {
-        flex: 50%;
+        flex: 55%;
         display: flex;
         position: relative;
+        padding-right: 36rem;
         img {
             height: 100%;
             margin-inline: auto;
@@ -70,13 +71,20 @@
         .icon-rating {
             position: absolute;
             top: 90rem;
-            right: -20rem;
+            right: 80rem;
         }
 
         .container-white-content {
             display: flex;
             align-items: center;
             gap: 26rem;
+            position: relative;
+
+            .icon-checked {
+                position: absolute;
+                top: -23rem;
+                right: -42rem;
+            }
 
             .container-white-comment {
                 .container-white-title {
@@ -99,21 +107,21 @@
             }
         }
 
-        .container-white-first {
+        .container-white-calendar {
             position: absolute;
             top: 190rem;
             left: -50rem;
             padding: 15rem 28rem;
         }
 
-        .container-white-second {
+        .container-white-mail {
             position: absolute;
             top: 380rem;
-            right: -20rem;
+            right: 20rem;
             padding: 20rem;
         }
 
-        .container-white-third {
+        .container-white-join {
             position: absolute;
             display: flex;
             flex-direction: column;

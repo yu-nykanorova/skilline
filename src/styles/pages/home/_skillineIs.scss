@@ -1,0 +1,144 @@
+.skilline-is {
+    &-container {}
+
+    &__for-whom {
+        padding: 0 123rem 0 118rem;
+        
+        &-title {
+            font-weight: 600;
+            font-size: 44rem;
+            line-height: 180%;
+            color: var(--c-blue-dark-first);
+            margin-bottom: 20rem;
+            text-align: center;
+        }
+        &-desc {
+            max-width: 1100rem;
+            font-weight: 400;
+            font-size: 24rem;
+            line-height: 180%;
+            letter-spacing: 0.02em;
+            text-align: center;
+            color: var(--c-grey-desc-first);
+            margin-bottom: 80rem;
+            margin-inline: auto;
+        }
+        &-list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 160rem;
+        }
+        &-item {
+            border-radius: 20rem;
+            width: 600rem;
+            position: relative;
+
+            img {
+                width: 100%;
+                border-radius: 20rem;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 5rem;
+                background: rgba(7, 8, 23, 0.45);
+                opacity: 0.6;
+                border-radius: 20rem;
+            }
+            
+            .item-title {
+                font-weight: 600;
+                font-size: 32rem;
+                text-align: center;
+                color: var(--c-white);
+                position: absolute;
+                top: 123rem;
+                left: 20%;
+                right: 20%;
+            }
+            .item-button {
+                position: absolute;
+                top: 197rem;
+                left: 26%;
+                right: 26%;
+                max-width: 50%;
+                font-weight: 500;
+                font-size: 22rem;
+                text-align: center;
+                color: var(--c-white);
+                border-radius: 80rem;
+                &-transparent {
+                    background: transparent;
+                    border: 1px solid var(--c-white);
+                    padding: 24rem 38rem;
+                }
+                &-blue {
+                    background: rgba(35, 189, 238, 0.9);
+                    padding: 24rem 41rem;
+                }
+            }
+        }
+    }
+
+    &__video {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 160rem;
+        &-info {
+
+            .circle-yellow-big {}
+            .circle-yellow-small {}
+        }
+        &-title {
+            font-weight: 500;
+            font-size: 36rem;
+            line-height: 160%;
+            color: var(--c-blue-dark-first);
+            margin-bottom: 30rem;
+        }
+        &-desc {
+            font-weight: 400;
+            font-size: 24rem;
+            line-height: 180%;
+            letter-spacing: 0.02em;
+            color: var(--c-grey-desc-first);
+            margin-bottom: 30rem;
+        }
+
+        &-more {
+            font-weight: 400;
+            font-size: 22rem;
+            line-height: 180%;
+            text-decoration: underline;
+            text-decoration-skip-ink: none;
+            color: var(--c-grey-desc-first);
+        }
+
+        &-box {
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+
+            .square-blue {}
+            .square-yellow {}
+        }
+    }
+
+    &__watch-button {
+        position: absolute;
+        top: calc(50% - 40rem);
+        left: calc(50% - 40rem);
+    }
+
+    span {
+        color: var(--c-orange-first);
+    }
+}

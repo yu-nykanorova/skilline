@@ -1,0 +1,92 @@
+.all-in-one {
+    &-container {
+        padding-top: 116rem;
+        padding-bottom: 158rem;
+        text-align: center;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 36rem;
+        line-height: 180%;
+        color: var(--c-blue-dark-first);
+        margin-bottom: 20rem;
+        span {
+            color: var(--c-orange-first);
+        }
+    }
+
+    &__desc {
+        max-width: 837rem;
+        margin-inline: auto;
+        font-weight: 400;
+        font-size: 24rem;
+        line-height: 180%;
+        text-align: center;
+        color: var(--c-grey-desc-first);
+        margin-bottom: 160rem;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 60rem;
+        padding-inline: 35rem;
+        border: 2px solid blueviolet;
+        &-item {
+            padding: 120rem 54rem 50rem;
+            border-radius: 20rem;
+            box-shadow: 0 10rem 60rem 0 rgba(38, 45, 118, 0.08);
+            background: var(--c-white);
+            position: relative;
+            display: grid;
+            grid-template-rows: 1fr auto;
+            gap: 24rem;
+            .item-icon {
+                position: absolute;
+                top: -57rem;
+                left: calc(50% - 50rem);
+                border-radius: 100%;
+                &.item-icon-blue {
+                    background: var(--c-blue-first);
+                    padding: 27rem 33rem;
+                    box-shadow: 0 10px 40px 0 rgba(54, 61, 136, 0.06);
+                }
+                &.item-icon-orange {
+                    background: var(--c-orange-first);
+                    padding: 26rem;
+                    box-shadow: 0 16px 40px 0 rgba(37, 44, 113, 0.1);
+                }
+                &.item-icon-lightblue {
+                    background: var(--c-blue-light-second);
+                    padding: 28rem 22rem;
+                    box-shadow: 0 10px 40px 0 rgba(54, 61, 136, 0.06);
+                }
+                .icon-invoice, .icon-calendar, .icon-community {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            .item-title {
+                font-weight: 500;
+                font-size: 30rem;
+                text-align: center;
+                color: var(--c-blue-dark-first);
+                align-self: center;
+            }
+
+            .item-desc {
+                font-weight: 400;
+                font-size: 20rem;
+                line-height: 180%;
+                text-align: center;
+                color: var(--c-grey-desc-first);
+            }
+        }
+    }
+
+
+
+}

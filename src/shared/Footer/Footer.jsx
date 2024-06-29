@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { Logo } from "../../shared/components/Logo"; 
 
 export const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer">
       <div className="container mi footer-container">
@@ -26,7 +28,7 @@ export const Footer = () => {
             <Link className="link footer__link">Terms & Conditions</Link>
           </div>
           <div className="footer__copyright">
-            © 2021 Class Technologies Inc. 
+            © {currentYear} Class Technologies Inc. 
           </div>
         </div>
       </div>

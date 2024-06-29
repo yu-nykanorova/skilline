@@ -6,6 +6,7 @@ import { ContainerWhite } from "../../shared/components/ContainerWhite";
 import { IconCalendarBlue } from "../../shared/components/IconCalendarBlue";
 import { IconEnvelopeOrange } from "../../shared/components/IconEnvelopeOrange";
 import { IconUser } from "../../styles/pages/home/IconUser";
+import { IconChecked } from "../../shared/components/IconChecked";
 
 export const Welcome = () => {
   return (
@@ -25,7 +26,7 @@ export const Welcome = () => {
         <div className="welcome__image">
           <img src="src/assets/image/lovely-teenage-girl.png" alt="welcome teenage girl" />
           <IconRating className="icon-rating" />
-          <ContainerWhite className="container-white-first">
+          <ContainerWhite className="container-white-calendar">
             <div className="container-white-content">
               <IconCalendarBlue />
               <div className="container-white-comment">
@@ -34,16 +35,17 @@ export const Welcome = () => {
               </div>
             </div>
           </ContainerWhite>
-          <ContainerWhite className="container-white-second">
+          <ContainerWhite className="container-white-mail">
             <div className="container-white-content">
               <IconEnvelopeOrange />
               <div className="container-white-comment">
                 <div className="container-white-title">Congratulations</div>
                 <div className="container-white-desc">Your admission completed</div>
               </div>
+              <IconChecked className="icon-checked" />
             </div>  
           </ContainerWhite>
-          <ContainerWhite className="container-white-third">
+          <ContainerWhite className="container-white-join">
             <div className="container-white-content">
               <IconUser />
               <div className="container-white-comment">
