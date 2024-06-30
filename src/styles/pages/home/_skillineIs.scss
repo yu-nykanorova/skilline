@@ -3,6 +3,7 @@
 
     &__for-whom {
         padding: 0 123rem 0 118rem;
+        border: 2px solid black;
         
         &-title {
             font-weight: 600;
@@ -88,12 +89,37 @@
     &__video {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+        gap: 67rem;
         margin-bottom: 160rem;
+        padding: 20rem;
+        position: relative;
+        border: 2px solid black;
+        
         &-info {
-
-            .circle-yellow-big {}
-            .circle-yellow-small {}
+            flex: 50%;
+            position: relative;
+            z-index: 1;
+            .circle-yellow-big {
+                position: absolute;
+                top: -4%;
+                left: -3.5%;
+                width: 73rem;
+                height: 73rem;
+                background: var(--c-orange-second);
+                border-radius: 100%;
+                z-index: 1;
+            }
+            .circle-yellow-small {
+                position: absolute;
+                top: 55%;
+                right: -1%;
+                width: 30rem;
+                height: 30rem;
+                background: var(--c-orange-second);
+                border-radius: 100%;
+                z-index: 1;
+            }
         }
         &-title {
             font-weight: 500;
@@ -101,6 +127,8 @@
             line-height: 160%;
             color: var(--c-blue-dark-first);
             margin-bottom: 30rem;
+            position: relative;
+            z-index: 2;
         }
         &-desc {
             font-weight: 400;
@@ -109,6 +137,8 @@
             letter-spacing: 0.02em;
             color: var(--c-grey-desc-first);
             margin-bottom: 30rem;
+            position: relative;
+            z-index: 2;
         }
 
         &-more {
@@ -122,13 +152,36 @@
 
         &-box {
             position: relative;
-
+            border-radius: 20rem;
+            flex: 50%;
+            z-index: 2;
             img {
                 width: 100%;
+                z-index: 2;
+                position: relative;
+                border-radius: 20rem;
             }
 
-            .square-blue {}
-            .square-yellow {}
+            .square-blue {
+                position: absolute;
+                top: -3%;
+                left: -3%;
+                border-radius: 20rem;
+                width: 138rem;
+                height: 138rem;
+                background: var(--c-blue-light-third);
+                z-index: 1;
+            }
+            .square-yellow {
+                position: absolute;
+                bottom: -3%;
+                right: -3%;
+                border-radius: 20rem;
+                width: 231rem;
+                height: 231rem;
+                background: var(--c-orange-third);
+                z-index: 1;
+            }
         }
     }
 
@@ -136,6 +189,7 @@
         position: absolute;
         top: calc(50% - 40rem);
         left: calc(50% - 40rem);
+        cursor: pointer;
     }
 
     span {
