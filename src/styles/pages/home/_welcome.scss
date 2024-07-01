@@ -15,15 +15,12 @@
     &__title {
         font-weight: 700;
         font-size: 54rem;
-        color: var(--c-blue-dark-first);
         margin-bottom: 34rem;
-        span {
-            color: var(--c-orange-first);
-        }
     }
 
     &__desc {
         max-width: 525rem;
+        font-family: var(--second-family);
         font-weight: 400;
         font-size: 24rem;
         line-height: 160%;

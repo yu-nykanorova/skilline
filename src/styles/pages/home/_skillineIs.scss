@@ -9,18 +9,14 @@
             font-weight: 600;
             font-size: 44rem;
             line-height: 180%;
-            color: var(--c-blue-dark-first);
             margin-bottom: 20rem;
             text-align: center;
         }
         &-desc {
             max-width: 1100rem;
-            font-weight: 400;
             font-size: 24rem;
-            line-height: 180%;
             letter-spacing: 0.02em;
             text-align: center;
-            color: var(--c-grey-desc-first);
             margin-bottom: 80rem;
             margin-inline: auto;
         }
@@ -28,6 +24,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            gap: 100rem;
             margin-bottom: 160rem;
         }
         &-item {
@@ -125,17 +122,13 @@
             font-weight: 500;
             font-size: 36rem;
             line-height: 160%;
-            color: var(--c-blue-dark-first);
             margin-bottom: 30rem;
             position: relative;
             z-index: 2;
         }
         &-desc {
-            font-weight: 400;
             font-size: 24rem;
-            line-height: 180%;
             letter-spacing: 0.02em;
-            color: var(--c-grey-desc-first);
             margin-bottom: 30rem;
             position: relative;
             z-index: 2;
@@ -164,7 +157,7 @@
 
             .square-blue {
                 position: absolute;
-                top: -3%;
+                top: -3.5%;
                 left: -3%;
                 border-radius: 20rem;
                 width: 138rem;
@@ -190,9 +183,5 @@
         top: calc(50% - 40rem);
         left: calc(50% - 40rem);
         cursor: pointer;
-    }
-
-    span {
-        color: var(--c-orange-first);
     }
 }

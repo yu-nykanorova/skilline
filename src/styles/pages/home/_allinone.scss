@@ -9,21 +9,14 @@
         font-weight: 700;
         font-size: 36rem;
         line-height: 180%;
-        color: var(--c-blue-dark-first);
         margin-bottom: 20rem;
-        span {
-            color: var(--c-orange-first);
-        }
     }
 
     &__desc {
         max-width: 837rem;
         margin-inline: auto;
-        font-weight: 400;
         font-size: 24rem;
-        line-height: 180%;
         text-align: center;
-        color: var(--c-grey-desc-first);
         margin-bottom: 160rem;
     }
 
@@ -73,16 +66,12 @@
                 font-weight: 500;
                 font-size: 30rem;
                 text-align: center;
-                color: var(--c-blue-dark-first);
                 align-self: center;
             }
 
             .item-desc {
-                font-weight: 400;
                 font-size: 20rem;
-                line-height: 180%;
                 text-align: center;
-                color: var(--c-grey-desc-first);
             }
         }
     }

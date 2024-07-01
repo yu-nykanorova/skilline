@@ -13,7 +13,7 @@ export const Welcome = () => {
     <section className="welcome">
       <div className="container mi welcome-container">
         <div className="welcome__info">
-          <div className="welcome__title"><span>Studying</span> Online is now much easier</div>
+          <div className="title-color welcome__title"><span className="title-decor-color">Studying</span> Online is now much easier</div>
           <div className="welcome__desc">Skilline is an interesting platform that will teach you in more an interactive way</div>
           <div className="link welcome__buttons">
             <div className="welcome__join-button">Join for free</div>
