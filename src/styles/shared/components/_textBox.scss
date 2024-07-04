@@ -1,0 +1,74 @@
+.text-box {
+    max-width: 680rem;
+    padding: 41rem 42rem 29rem 87rem;
+    border-radius: 20rem;
+    box-shadow: 2px 4px 60px 0 rgba(41, 44, 124, 0.1);
+    background: var(--c-white);
+    position: relative;
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 14rem;
+        height: 100%;
+        left: 0;
+        top: 0;
+        border-radius: 20rem 0 0 20rem;
+        box-shadow: 2px 4px 60px 0 rgba(41, 44, 124, 0.1);
+        background: var(--c-orange-dark);
+    }
+    
+    .comment-text {
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 22rem;
+        line-height: 180%;
+        letter-spacing: 0.02em;
+        color: var(--c-grey-testimonial-text);
+        position: relative;
+        margin-bottom: 31rem;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 6%;
+            left: -32rem;
+            width: 1rem;
+            height: 88%;
+            background: #bdbdd1;
+        }
+    }
+
+    .comment-data {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .comment-name {
+            font-family: var(--second-family);
+            font-weight: 600;
+            font-size: 24rem;
+            line-height: 180%;
+            color: var(--c-grey-testimonial-text);
+        }
+        .comment-rating {
+
+            .comment-stars {
+                display: flex;
+                justify-content: flex-end;
+                gap: 4rem;
+                margin-bottom: 12rem;
+            }
+
+            .comment-reviews {
+                font-family: var(--second-family);
+                font-weight: 600;
+                font-size: 18rem;
+                line-height: 180%;
+                letter-spacing: 0.02em;
+                color: var(--c-grey-testimonial-reviews);
+            }
+        }
+    }
+}
+

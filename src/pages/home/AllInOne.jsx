@@ -9,15 +9,15 @@ export const AllInOne = () => {
     <section className="all-in-one">
       <div className="container mi">
         <div className="small-container all-in-one-container">
-          <div className="title-color all-in-one__title">All-In-One <span className="title-decor-color">Cloud Software.</span></div>
-          <div className="desc all-in-one__desc">Skilline is one powerful online software suite that combines all the tools needed to run a successful school or office.</div>
+          <h2 className="title-color all-in-one__title">All-In-One <span className="title-decor-color">Cloud Software.</span></h2>
+          <p className="desc all-in-one__desc">Skilline is one powerful online software suite that combines all the tools needed to run a successful school or office.</p>
           <div className="all-in-one__list">
             <div className="all-in-one__list-item">
               <div className="item-icon item-icon-blue">
                 <IconInvoice className="icon-invoice" />
               </div>
-              <div className="title-color item-title">Online Billing, Invoicing, & Contracts</div>
-              <div className="desc item-desc">Simple and secure control of your organization`s financial and legal transactions. Send customized invoices and contracts</div>
+              <h3 className="title-color item-title">Online Billing, Invoicing, & Contracts</h3>
+              <p className="desc item-desc">Simple and secure control of your organization`s financial and legal transactions. Send customized invoices and contracts</p>
             </div>
             <div className="all-in-one__list-item">
               <div className="item-icon item-icon-orange">

@@ -1,13 +1,13 @@
 .header {
     background: var(--c-orange-light-first);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // right: 0;
 
     &-container {
         padding-top: 60rem;
-        padding-bottom: 28rem;
+        padding-bottom: 10rem;
         display: flex;
         justify-content: space-between;
         align-items: center;

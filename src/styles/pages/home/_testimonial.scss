@@ -1,0 +1,113 @@
+.testimonial {
+    &-container {
+        margin-bottom: 271rem;
+        // padding-right: calc(60rem + 203rem);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        max-width: 565rem;
+    }
+
+    &__label {
+        display: flex;
+        align-items: center;
+        gap: 30rem;
+        margin-bottom: 32rem;
+    }
+
+    &__label-text {
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 20rem;
+        letter-spacing: 0.2em;
+        color: var(--c-grey-testimonial);
+    }
+
+    &__label-line {
+        display: block;
+        width: 80rem;
+        height: 1rem;
+        border: 1px solid var(--c-grey-testimonial);
+    }
+
+    &__title {
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 60rem;
+        margin-bottom: 29rem;
+    }
+
+    &__desc {
+        font-size: 26rem;
+        letter-spacing: 0.02em;
+        display: flex;
+        flex-direction: column;
+        gap: 36rem;
+        margin-bottom: 43rem;
+    }
+
+    &__button {
+        max-width: 405rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid var(--c-orange-first);
+        border-radius: 80rem;
+        padding: 23rem 0 23rem 38rem;
+        position: relative;
+    }
+
+    &__button-title {
+        font-weight: 400;
+        font-size: 22rem;
+        line-height: 160%;
+        letter-spacing: 0.02em;
+        color: var(--c-orange-first);
+    }
+    
+    &__button-arrow {
+        display: flex;
+        border-radius: 100%;
+        border: 1px solid var(--c-orange-first);
+        padding: 32.5rem 27.5rem;
+        position: absolute;
+        right: -1rem;
+    }
+
+    &__box {
+        padding: 0 189rem 121rem 0;
+        display: flex;
+    }
+
+    &__item {
+        position: relative;
+        &:nth-child(2) {
+            display: none;
+        }
+    }
+
+    &__image {
+        display: flex;
+        border-radius: 20rem;
+        img {
+            border-radius: 20rem;
+        }
+    }
+
+    &__text-box {
+        position: absolute;
+        bottom: -121rem;
+        right: -189rem;
+    }
+
+    &__right-arrow {
+        position: absolute;
+        right: 0;
+        top: 40%;
+        font-size: 24rem;
+        font-weight: 600;
+        color: red;
+    }
+}

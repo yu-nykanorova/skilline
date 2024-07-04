@@ -2,14 +2,15 @@
     background: var(--c-orange-light-first);
 
     &-container {
-        padding-top: 249rem;
+        padding-top: 106rem;
         display: flex;
         justify-content: space-between;
     }
 
     &__info {
+        // max-width: 700rem;
         padding: 86rem 26rem 379rem 40rem;
-        flex: 45%;
+        flex: calc(50% - 13rem);
     }
 
     &__title {
@@ -56,7 +57,7 @@
     }
 
     &__image {
-        flex: 55%;
+        flex: calc(50% - 13rem);
         display: flex;
         position: relative;
         padding-right: 36rem;
@@ -67,8 +68,8 @@
 
         .icon-rating {
             position: absolute;
-            top: 90rem;
-            right: 80rem;
+            top: 10%;
+            right: 9%;
         }
 
         .container-white-content {
@@ -106,15 +107,15 @@
 
         .container-white-calendar {
             position: absolute;
-            top: 190rem;
-            left: -50rem;
+            top: 22%;
+            left: -8%;
             padding: 15rem 28rem;
         }
 
         .container-white-mail {
             position: absolute;
-            top: 380rem;
-            right: 20rem;
+            top: 44%;
+            right: 2%;
             padding: 20rem;
         }
 
@@ -123,8 +124,8 @@
             display: flex;
             flex-direction: column;
             gap: 19rem;
-            bottom: 175rem;
-            left: -60rem;
+            bottom: 19%;
+            left: -15%;
             padding: 26rem;
 
             .container-white-button {
