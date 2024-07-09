@@ -1,4 +1,4 @@
-import React from 'react'
+import PropTypes from "prop-types";
 
 export const IconCalendarOrange = ({ className }) => {
   return (
@@ -23,6 +23,9 @@ export const IconCalendarOrange = ({ className }) => {
         </clipPath>
       </defs>
     </svg>
-
   )
+}
+
+IconCalendarOrange.propTypes = {
+  className: PropTypes.string
 }

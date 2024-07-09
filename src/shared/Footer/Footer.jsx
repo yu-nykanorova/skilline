@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { Logo } from "../../shared/components/Logo"; 
 
@@ -23,9 +22,9 @@ export const Footer = () => {
         </div>
         <div className="footer__info">
           <div className="footer__info-menu">
-            <Link className="link footer__link">Careers</Link>
-            <Link className="link footer__link">Privacy Policy</Link>
-            <Link className="link footer__link">Terms & Conditions</Link>
+            <Link to="careers" className="link footer__link">Careers</Link>
+            <Link to="/" className="link footer__link">Privacy Policy</Link>
+            <Link to="/" className="link footer__link">Terms & Conditions</Link>
           </div>
           <div className="footer__copyright">
             © {currentYear} Class Technologies Inc. 

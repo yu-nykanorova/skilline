@@ -1,5 +1,5 @@
-import React from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 export const Logo = ({ isFilled, isWhite }) => {
   return (
@@ -10,4 +10,9 @@ export const Logo = ({ isFilled, isWhite }) => {
         <p className={isWhite ? "logo-name-white" : "logo-name"}>Skilline</p>
     </Link>
   )
+}
+
+Logo.propTypes = {
+  isFilled: PropTypes.bool.isRequired,
+  isWhite: PropTypes.bool.isRequired
 }

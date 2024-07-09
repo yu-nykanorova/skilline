@@ -5,12 +5,18 @@
         padding-top: 106rem;
         display: flex;
         justify-content: space-between;
+        @include desktop-medium {
+            padding-top: 80rem;
+        }
     }
 
     &__info {
-        // max-width: 700rem;
         padding: 86rem 26rem 379rem 40rem;
         flex: calc(50% - 13rem);
+        @include desktop-medium {
+            flex: 0 1 calc(60% - 13rem);
+            padding-bottom: 80rem;
+        }
     }
 
     &__title {
@@ -33,6 +39,9 @@
         display: flex;
         align-items: center;
         gap: 40rem;
+        @include desktop-for-skillineIs-section {
+            gap: 20rem;
+        }
     }
 
     &__join-button {
@@ -42,34 +51,58 @@
         padding: 22rem 38rem;
         border-radius: 80rem;
         background: var(--c-orange-first);
+        @include desktop-for-skillineIs-section {
+            padding-inline: 30rem;
+            font-size: 20rem;
+        }
     }
 
     &__watch-button-box {
         display: flex;
         align-items: center;
         gap: 32rem;
+        @include desktop-for-skillineIs-section {
+            gap: 20rem;
+        }
     }
 
     &__watch-button-desc {
         font-weight: 400;
         font-size: 24rem;
         color: var(--c-grey-menu);
+        @include desktop-for-skillineIs-section {
+            gap: 20rem;
+            font-size: 22rem;
+            font-weight: 500;
+        }
     }
 
     &__image {
-        flex: calc(50% - 13rem);
+        flex: 0 1 calc(50% - 13rem);
         display: flex;
         position: relative;
         padding-right: 36rem;
+        @include desktop-medium {
+            flex: 0 1 calc(40% - 13rem);
+        }
         img {
             height: 100%;
             margin-inline: auto;
+            @include desktop-medium {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
         }
 
         .icon-rating {
             position: absolute;
             top: 10%;
             right: 9%;
+            @include desktop-medium {
+                top: 5%;
+                right: -10%;
+            }
         }
 
         .container-white-content {
@@ -77,6 +110,10 @@
             align-items: center;
             gap: 26rem;
             position: relative;
+            @include desktop-for-skillineIs-section {
+                gap: 20rem;
+            }
+            @include desktop-medium {}
 
             .icon-checked {
                 position: absolute;
@@ -110,6 +147,11 @@
             top: 22%;
             left: -8%;
             padding: 15rem 28rem;
+            @include desktop-medium {
+                top: 34%;
+                left: -28%;
+                padding: 10rem 20rem;
+            }
         }
 
         .container-white-mail {
@@ -117,6 +159,11 @@
             top: 44%;
             right: 2%;
             padding: 20rem;
+            @include desktop-medium {
+                top: 54%;
+                right: 0;
+                padding: 10rem 15rem;
+            }
         }
 
         .container-white-join {
@@ -127,6 +174,12 @@
             bottom: 19%;
             left: -15%;
             padding: 26rem;
+            @include desktop-medium {
+                bottom: 5%;
+                left: -15%;
+                padding: 15rem;
+                gap: 10rem;
+            }
 
             .container-white-button {
                 padding: 12rem 47rem;
@@ -137,6 +190,11 @@
                 background: var(--c-red-first);
                 border-radius: 80rem;
                 align-self: center;
+                @include desktop-medium {
+                    padding: 10rem 30rem;
+                    font-weight: 600;
+                    font-size: 18rem;
+                }
             }
         }
     }

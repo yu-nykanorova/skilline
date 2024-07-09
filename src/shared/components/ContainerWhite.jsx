@@ -1,4 +1,4 @@
-import React from 'react'
+import PropTypes from "prop-types";
 
 export const ContainerWhite = ({ className, children }) => {
   return (
@@ -7,3 +7,10 @@ export const ContainerWhite = ({ className, children }) => {
     </div>
   )
 }
+
+ContainerWhite.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.node
+}
+
+

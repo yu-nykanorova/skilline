@@ -1,0 +1,47 @@
+.news {
+    &-container {
+        margin-bottom: 233rem;
+    }
+
+    &__title {
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 36rem;
+        line-height: 180%;
+        text-align: center;
+        margin-bottom: 20rem;
+    }
+
+    &__desc {
+        font-family: var(--second-family);
+        font-size: 24rem;
+        text-align: center;
+        margin-bottom: 100rem;
+    }
+
+    &__data {
+        display: flex;
+        justify-content: space-between;
+        gap: 120rem;
+        @include desktop-for-skillineIs-section {
+            gap: 70rem;
+        }
+    }
+
+    &__main {
+        max-width: 640rem;
+    }
+
+    &__read-more {
+        font-size: 20rem;
+        letter-spacing: 0.02em;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 50rem;
+    }
+}

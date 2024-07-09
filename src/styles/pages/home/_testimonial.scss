@@ -1,9 +1,12 @@
 .testimonial {
     &-container {
-        margin-bottom: 271rem;
+        margin-bottom: 150rem;
         // padding-right: calc(60rem + 203rem);
         display: flex;
         justify-content: space-between;
+        @include desktop-for-skillineIs-section {
+            gap: 20rem;
+        }
     }
 
     &__info {
@@ -79,6 +82,9 @@
     &__box {
         padding: 0 189rem 121rem 0;
         display: flex;
+        @include desktop-for-skillineIs-section {
+            padding-right: 130rem;
+        }
     }
 
     &__item {

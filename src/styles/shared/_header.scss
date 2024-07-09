@@ -1,9 +1,5 @@
 .header {
     background: var(--c-orange-light-first);
-    // position: absolute;
-    // top: 0;
-    // left: 0;
-    // right: 0;
 
     &-container {
         padding-top: 60rem;
@@ -17,6 +13,9 @@
         display: flex;
         gap: 80rem;
         align-items: center;
+        @include desktop-medium {
+            gap: 50rem;
+        }
     }
 
     &__menu {}

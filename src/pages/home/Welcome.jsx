@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { WatchButton } from "../../shared/components/WatchButton";
 import { IconRating } from "../../shared/components/IconRating";

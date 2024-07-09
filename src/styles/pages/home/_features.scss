@@ -25,6 +25,7 @@
         align-items: stretch;
         justify-content: space-between;
         gap: 160rem;
+        
     }
 
     &__item {
@@ -32,6 +33,10 @@
         align-items: center;
         justify-content: space-between;
         gap: 90rem;
+        @include desktop-for-skillineIs-section {
+            gap: 60rem;
+        }
+        
 
         &:nth-child(even) {
             flex-direction: row-reverse;
@@ -53,7 +58,11 @@
             letter-spacing: 0.02em;
         }
 
-        &-image {}
+        &-image {
+            @include desktop-for-skillineIs-section {
+                flex-shrink: 0.5;
+            }
+        }
     }
 
     &__button-more {

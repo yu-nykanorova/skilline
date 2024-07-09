@@ -1,5 +1,5 @@
-import React from "react";
 import { IconStar } from "./IconStar";
+import PropTypes from "prop-types";
 
 export const TextBox = ({ text, name, reviews, className }) => {
     const stars = [];
@@ -22,4 +22,11 @@ export const TextBox = ({ text, name, reviews, className }) => {
         </div>
     </div>
   )
+}
+
+TextBox.propTypes = {
+    text: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    reviews: PropTypes.number.isRequired,
+    className: PropTypes.string
 }

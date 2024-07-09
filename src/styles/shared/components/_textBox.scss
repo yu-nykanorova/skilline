@@ -5,6 +5,9 @@
     box-shadow: 2px 4px 60px 0 rgba(41, 44, 124, 0.1);
     background: var(--c-white);
     position: relative;
+    @include desktop-for-skillineIs-section {
+        padding: 30rem 40rem;
+    }
     &::before {
         content: "";
         display: block;
@@ -27,6 +30,10 @@
         color: var(--c-grey-testimonial-text);
         position: relative;
         margin-bottom: 31rem;
+        @include desktop-for-skillineIs-section {
+            font-size: 18rem;
+            margin-bottom: 20rem;
+        }
 
         &::before {
             content: "";
@@ -37,6 +44,9 @@
             width: 1rem;
             height: 88%;
             background: #bdbdd1;
+            @include desktop-for-skillineIs-section {
+                left: -10rem;
+            }
         }
     }
 
@@ -50,6 +60,9 @@
             font-size: 24rem;
             line-height: 180%;
             color: var(--c-grey-testimonial-text);
+            @include desktop-for-skillineIs-section {
+                font-size: 20rem;
+            }
         }
         .comment-rating {
 

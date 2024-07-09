@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { WatchButton } from "../../shared/components/WatchButton";
 
@@ -12,12 +11,16 @@ export const SkillineIs = () => {
             <p className="desc skilline-is__for-whom-desc">Skilline is a platform that allows educators to create online classes whereby they can store the course materials online; manage assignments, quizzes and exams; monitor due dates; grade results and provide students with feedback all in one place.</p>
             <div className="skilline-is__for-whom-list">
               <div className="skilline-is__for-whom-item">
-                <img src="src/assets/image/about/for_instructors.png" alt="teacher near the board" />
+                <div className="item-image">
+                  <img src="src/assets/image/about/for_instructors.png" alt="teacher near the board" />
+                </div>
                 <div className="item-title">FOR INSTRUCTORS</div>
                 <Link className="item-button item-button-transparent">Start a class today</Link>
               </div>
               <div className="skilline-is__for-whom-item">
+                <div className="item-image">
                 <img src="src/assets/image/about/for_students.png" alt="students" />
+                </div>           
                 <div className="item-title">FOR STUDENTS</div>
                 <Link className="item-button item-button-blue">Enter access code</Link>
               </div>

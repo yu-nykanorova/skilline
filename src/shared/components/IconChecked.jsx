@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 export const IconChecked = ({ className }) => {
   return (
@@ -7,4 +7,8 @@ export const IconChecked = ({ className }) => {
         <path d="M6 10.6944L8.88679 14L15 7" stroke="white" strokeWidth="2" strokeLinecap="round"/>
     </svg>
   )
+}
+
+IconChecked.propTypes = {
+  className: PropTypes.string
 }

@@ -18,19 +18,28 @@ body {
 
 .page-wrapper {
 	position: relative;
-	display: grid;
-	grid-template-rows: auto 1fr auto;
+	// display: grid;
+	// grid-template-rows: auto 1fr auto;
 }
 
 .container {
 	max-width: 1920rem;
 	padding: 0 126rem 0 100rem;
 	border: 2px solid palegreen;
+	@include desktop-for-skillineIs-section {
+		padding: 0 80rem 0 60rem;
+	}
+	@include desktop-medium {
+		padding: 0 60rem;
+	}
 }
 
 .small-container {
 	padding: 0 60rem 0 92rem;
 	border: 2px solid red;
+	@include desktop-medium {
+		padding: 0 60rem;
+	}
 }
 
 .mi {

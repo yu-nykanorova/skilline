@@ -1,4 +1,3 @@
-import React from "react";
 import { Welcome } from "./Welcome";
 import { AllInOne } from "./AllInOne";
 import { SkillineIs } from "./SkillineIs";

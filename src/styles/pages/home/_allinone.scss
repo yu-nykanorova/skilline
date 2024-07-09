@@ -35,6 +35,9 @@
             display: grid;
             grid-template-rows: 1fr auto;
             gap: 24rem;
+            @include desktop-for-skillineIs-section {
+                padding: 80rem 30rem 40rem;
+            }
             .item-icon {
                 position: absolute;
                 top: -57rem;
@@ -72,6 +75,7 @@
             .item-desc {
                 font-size: 20rem;
                 text-align: center;
+                align-self: flex-start;
             }
         }
     }

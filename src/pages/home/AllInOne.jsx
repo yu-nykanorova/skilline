@@ -1,4 +1,3 @@
-import React from "react";
 import { IconInvoice } from "../../shared/components/IconInvoice";
 import { IconCommunity } from "../../shared/components/IconCommunity";
 import { IconCalendarOrange } from "../../shared/components/IconCalendarOrange";
@@ -30,7 +29,7 @@ export const AllInOne = () => {
               <div className="item-icon item-icon-lightblue">
                 <IconCommunity className="icon-community" />
               </div>
-              <div className="title-color sitem-title">Customer Tracking</div>
+              <div className="title-color item-title">Customer Tracking</div>
               <div className="desc item-desc">Automate and track emails to individuals or groups. Skilline`s built-in system helps organize your organization</div>
             </div>
           </div>

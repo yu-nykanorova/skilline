@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 export const IconStar = ({ className }) => {
   return (
@@ -8,4 +8,8 @@ export const IconStar = ({ className }) => {
         </svg>
     </div>
   )
+}
+
+IconStar.propTypes = {
+  className: PropTypes.string
 }

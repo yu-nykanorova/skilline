@@ -1,4 +1,4 @@
-import React from 'react'
+import PropTypes from "prop-types";
 
 export const IconRating = ({ className }) => {
   return (
@@ -24,4 +24,8 @@ export const IconRating = ({ className }) => {
     </svg>
 
   )
+}
+
+IconRating.propTypes = {
+  className: PropTypes.string
 }

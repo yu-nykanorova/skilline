@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 export const IconInvoice = ({ className }) => {
   return (
@@ -13,4 +13,8 @@ export const IconInvoice = ({ className }) => {
         </defs>
     </svg>
   )
+}
+
+IconInvoice.propTypes = {
+  className: PropTypes.string
 }

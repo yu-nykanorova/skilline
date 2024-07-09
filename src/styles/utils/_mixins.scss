@@ -1,4 +1,16 @@
 // MEDIA QUERIES
+@mixin desktop-for-skillineIs-section {
+    @media (max-width: $desktop-for-skillineIs-section) {
+        @content;
+    }
+}
+
+@mixin desktop-medium {
+    @media (max-width: $desktop-medium) {
+        @content;
+    }
+}
+
 @mixin desktop-small {
     @media (max-width: $desktop-small) {
         @content;

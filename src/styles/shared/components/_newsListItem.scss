@@ -1,0 +1,50 @@
+.news-list-item {
+    display: flex;
+    gap: 40rem;
+    @include desktop-for-skillineIs-section {
+        gap: 30rem;
+    }
+
+    &__image {
+        position: relative;
+        display: flex;
+        flex-shrink: 0;
+        border-radius: 20rem;
+        @include desktop-for-skillineIs-section {
+            flex: 0 0.3 calc(40% - 15rem);
+            align-self: flex-start;
+        }
+        img {
+            border-radius: 20rem;
+        }
+    }
+
+    &__category {
+        position: absolute;
+        right: 20rem;
+        bottom: 20rem;
+        padding: 4rem 12rem;
+        font-weight: 400;
+        font-size: 18rem;
+        letter-spacing: 0.02em;
+        color: var(--c-grey-menu);
+        background: var(--c-orange-light-second);
+        border-radius: 80rem;
+    }
+
+    &__info {
+        flex: calc(60% - 15rem);
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 22rem;
+        line-height: 180%;
+        color: var(--c-grey-menu);
+    }
+
+    &__desc {
+        font-size: 20rem;
+        letter-spacing: 0.02em;
+    }
+}

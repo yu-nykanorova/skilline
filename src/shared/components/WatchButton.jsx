@@ -1,4 +1,5 @@
-import React from 'react'
+import PropTypes from "prop-types";
+
 
 export const WatchButton = ({ className }) => {
   return (
@@ -8,4 +9,8 @@ export const WatchButton = ({ className }) => {
         </svg>
     </div>
   )
+}
+
+WatchButton.propTypes = {
+  className: PropTypes.string
 }

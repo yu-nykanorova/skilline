@@ -4,6 +4,9 @@
     &__for-whom {
         padding: 0 123rem 0 118rem;
         border: 2px solid black;
+        @include desktop-for-skillineIs-section {
+            padding-inline: 80rem;
+        }
         
         &-title {
             font-weight: 600;
@@ -26,15 +29,25 @@
             justify-content: space-between;
             gap: 100rem;
             margin-bottom: 160rem;
+            @include desktop-for-skillineIs-section {
+                gap: 60rem;
+            }
         }
         &-item {
             border-radius: 20rem;
-            width: 600rem;
+            max-width: 600rem;
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-            img {
-                width: 100%;
+            .item-image {
                 border-radius: 20rem;
+                display: flex;
+                img {
+                    width: 100%;
+                    border-radius: 20rem;
+                }
             }
 
             &::before {
@@ -43,7 +56,7 @@
                 top: 0;
                 left: 0;
                 right: 0;
-                bottom: 5rem;
+                bottom: 0;
                 background: rgba(7, 8, 23, 0.45);
                 opacity: 0.6;
                 border-radius: 20rem;
@@ -55,29 +68,40 @@
                 text-align: center;
                 color: var(--c-white);
                 position: absolute;
-                top: 123rem;
-                left: 20%;
-                right: 20%;
+                top: 132rem;
+                left: 20rem;
+                right: 20rem;
             }
             .item-button {
                 position: absolute;
                 top: 197rem;
-                left: 26%;
-                right: 26%;
-                max-width: 50%;
+                left: 50%;
+                transform: translateX(-50%);
+                max-width: 283rem;
                 font-weight: 500;
                 font-size: 22rem;
                 text-align: center;
                 color: var(--c-white);
                 border-radius: 80rem;
+                @include desktop-for-skillineIs-section {
+                    font-weight: 400;
+                    font-size: 20rem;
+                }
+
                 &-transparent {
                     background: transparent;
                     border: 1px solid var(--c-white);
-                    padding: 24rem 38rem;
+                    padding: 24rem 37rem;
+                    @include desktop-for-skillineIs-section {
+                        padding: 10rem 13rem;
+                    }
                 }
                 &-blue {
                     background: rgba(35, 189, 238, 0.9);
-                    padding: 24rem 41rem;
+                    padding: 24rem 40rem;
+                    @include desktop-for-skillineIs-section {
+                        padding: 10rem 15rem;
+                    }
                 }
             }
         }

@@ -1,4 +1,3 @@
-import React from "react";
 
 export const IconUser = () => {
   return (
@@ -10,3 +9,5 @@ export const IconUser = () => {
     </div>
   )
 }
+
+
