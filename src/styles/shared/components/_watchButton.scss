@@ -4,4 +4,7 @@
     background: var(--c-white);
     padding: 26rem 24rem 25rem 32rem;
     border-radius: 50%;
+    @include desktop-small {
+        padding: 18rem 20rem 18rem 22rem;
+    }
 }

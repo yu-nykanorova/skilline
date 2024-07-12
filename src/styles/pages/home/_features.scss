@@ -2,6 +2,9 @@
 
     &-container {
         margin-bottom: 158rem;
+        @include desktop-small {
+            margin-bottom: 120rem;
+        }
     }
     
     &__title {
@@ -16,6 +19,9 @@
         font-size: 24rem;
         text-align: center;
         margin-bottom: 84rem;
+        @include desktop-medium {
+            margin-bottom: 70rem;
+        }
     }
 
     &__list {
@@ -25,7 +31,10 @@
         align-items: stretch;
         justify-content: space-between;
         gap: 160rem;
-        
+        @include desktop-medium {
+            padding-inline: 30rem;
+            gap: 100rem;
+        }
     }
 
     &__item {
@@ -36,7 +45,12 @@
         @include desktop-for-skillineIs-section {
             gap: 60rem;
         }
-        
+        @include desktop-medium {
+            gap: 40rem;
+        }
+        @include desktop-small {
+            gap: 20rem;
+        }
 
         &:nth-child(even) {
             flex-direction: row-reverse;
@@ -51,6 +65,9 @@
             font-size: 40rem;
             line-height: 160%;
             margin-bottom: 20rem;
+            @include desktop-medium {
+                font-size: 32rem;
+            }
         }
 
         &-desc {
@@ -61,6 +78,9 @@
         &-image {
             @include desktop-for-skillineIs-section {
                 flex-shrink: 0.5;
+            }
+            @include desktop-small {
+                flex-shrink: 0.7;
             }
         }
     }
@@ -81,9 +101,9 @@
             color: var(--c-orange-first);
             margin-top: 106rem;
             text-align: center;
+            @include desktop-medium {
+                margin-top: 70rem;
+            }
         }
     }
 }
-// .features__list .features__item:not(:last-child) {
-//     border: 2px dotted green;
-// }

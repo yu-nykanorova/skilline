@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Logo } from "../components/Logo";
+import { Burger } from "../components/Burger";
 
 export const Header = () => {
   return (
@@ -15,6 +16,7 @@ export const Header = () => {
             <Link className="link header__link" to="/blog">Blog</Link>
             <Link className="link header__link" to="/about">About Us</Link>
           </div>
+          <Burger className="header__burger"/>
           <div className="header__buttons">
             <Link className="link header__login-button" to="/login">Login</Link>
             <Link className="link header__signup-button" to="/signup">Sign Up</Link>

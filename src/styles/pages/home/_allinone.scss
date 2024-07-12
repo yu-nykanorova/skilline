@@ -3,6 +3,10 @@
         padding-top: 116rem;
         padding-bottom: 158rem;
         text-align: center;
+        @include desktop-small {
+            padding-top: 80rem;
+            padding-bottom: 120rem;
+        }
     }
 
     &__title {
@@ -18,6 +22,9 @@
         font-size: 24rem;
         text-align: center;
         margin-bottom: 160rem;
+        @include desktop-small {
+            margin-bottom: 120rem;
+        }
     }
 
     &__list {
@@ -26,6 +33,12 @@
         gap: 60rem;
         padding-inline: 35rem;
         border: 2px solid blueviolet;
+        @include desktop-medium {
+            gap: 30rem;
+        }
+        @include desktop-small {
+            grid-template-columns: initial;
+        }
         &-item {
             padding: 120rem 54rem 50rem;
             border-radius: 20rem;
@@ -38,6 +51,10 @@
             @include desktop-for-skillineIs-section {
                 padding: 80rem 30rem 40rem;
             }
+            @include desktop-small {
+                padding-top: 60rem;
+            }
+            
             .item-icon {
                 position: absolute;
                 top: -57rem;

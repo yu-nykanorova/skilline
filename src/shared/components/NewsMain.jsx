@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-export const NewsMain = ({ className, news }) => {
+export const NewsMain = ({ className = "", news }) => {
   return (
     <div className={`main-news-item ${className}`}>
         <div className="main-news-item__image">

@@ -4,7 +4,7 @@ import { IconRating } from "../../shared/components/IconRating";
 import { ContainerWhite } from "../../shared/components/ContainerWhite";
 import { IconCalendarBlue } from "../../shared/components/IconCalendarBlue";
 import { IconEnvelopeOrange } from "../../shared/components/IconEnvelopeOrange";
-import { IconUser } from "../../styles/pages/home/IconUser";
+import { IconUser } from "../../shared/components/IconUser";
 import { IconChecked } from "../../shared/components/IconChecked";
 
 export const Welcome = () => {

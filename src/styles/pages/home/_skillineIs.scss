@@ -7,6 +7,10 @@
         @include desktop-for-skillineIs-section {
             padding-inline: 80rem;
         }
+        @include desktop-medium {
+            padding-inline: 60rem;
+        }
+        
         
         &-title {
             font-weight: 600;
@@ -22,6 +26,9 @@
             text-align: center;
             margin-bottom: 80rem;
             margin-inline: auto;
+            @include desktop-medium {
+                margin-bottom: 60rem;
+            }
         }
         &-list {
             display: flex;
@@ -31,6 +38,10 @@
             margin-bottom: 160rem;
             @include desktop-for-skillineIs-section {
                 gap: 60rem;
+            }
+            @include desktop-small {
+                margin-bottom: 120rem;
+                flex-direction: column;
             }
         }
         &-item {
@@ -71,6 +82,9 @@
                 top: 132rem;
                 left: 20rem;
                 right: 20rem;
+                @include desktop-medium {
+                    top: 40%;
+                }
             }
             .item-button {
                 position: absolute;
@@ -86,6 +100,9 @@
                 @include desktop-for-skillineIs-section {
                     font-weight: 400;
                     font-size: 20rem;
+                }
+                @include desktop-medium {
+                    top: 60%;
                 }
 
                 &-transparent {
@@ -116,6 +133,12 @@
         padding: 20rem;
         position: relative;
         border: 2px solid black;
+        @include desktop-small {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 120rem;
+        }
         
         &-info {
             flex: 50%;

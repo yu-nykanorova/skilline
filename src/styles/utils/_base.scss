@@ -30,7 +30,10 @@ body {
 		padding: 0 80rem 0 60rem;
 	}
 	@include desktop-medium {
-		padding: 0 60rem;
+		padding-inline: 60rem;
+	}
+	@include desktop-small {
+		padding-inline: 30rem;
 	}
 }
 
@@ -38,7 +41,10 @@ body {
 	padding: 0 60rem 0 92rem;
 	border: 2px solid red;
 	@include desktop-medium {
-		padding: 0 60rem;
+		padding-inline: 60rem;
+	}
+	@include desktop-small {
+		padding-inline: 30rem;
 	}
 }
 

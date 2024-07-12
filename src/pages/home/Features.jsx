@@ -19,7 +19,7 @@ export const Features = () => {
             </div>
             <div className="features__item">
               <div className="features__item-info">
-                <h3 className="title-color features__item-title">Assessments,<span className="title-decor-color">Quizzes</span>, Tests</h3>
+                <h3 className="title-color features__item-title">Assessments, <span className="title-decor-color">Quizzes</span>, Tests</h3>
                 <p className="desc features__item-desc">Easily launch live assignments, quizzes, and tests.
 Student results are automatically entered in the online gradebook.</p>
               </div>

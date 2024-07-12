@@ -1,0 +1,31 @@
+.burger-box {
+    padding: 4rem 2rem;
+    width: 40rem;
+    height: 34rem;
+    .burger-menu {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        span {
+            position: absolute;
+            top: 11rem;
+            width: 100%;
+            height: 4rem;
+            background: var(--c-blue-dark-first);
+        }
+        &::before, &::after {
+            display: block;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 4rem;
+            background: var(--c-blue-dark-first);
+        }
+        &::before {
+            top: 0;
+        }
+        &::after {
+            bottom: 0;
+        }
+    }
+}

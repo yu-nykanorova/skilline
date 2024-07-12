@@ -1,16 +1,23 @@
 .testimonial {
     &-container {
         margin-bottom: 150rem;
-        // padding-right: calc(60rem + 203rem);
         display: flex;
         justify-content: space-between;
         @include desktop-for-skillineIs-section {
             gap: 20rem;
         }
+        @include desktop-small {
+            flex-direction: column;
+            justify-content: center;
+        }
     }
 
     &__info {
         max-width: 565rem;
+        @include desktop-small {
+            text-align: center;
+            max-width: 100%;
+        }
     }
 
     &__label {
@@ -40,6 +47,9 @@
         font-weight: 700;
         font-size: 60rem;
         margin-bottom: 29rem;
+        @include desktop-small {
+            font-size: 44rem;
+        }
     }
 
     &__desc {
@@ -49,6 +59,10 @@
         flex-direction: column;
         gap: 36rem;
         margin-bottom: 43rem;
+        @include desktop-small {
+            gap: 20rem;
+            font-size: 22rem;
+        }
     }
 
     &__button {
@@ -60,6 +74,10 @@
         border-radius: 80rem;
         padding: 23rem 0 23rem 38rem;
         position: relative;
+        @include desktop-small {
+            margin-inline: auto;
+            padding: 20rem 0 20rem 30rem;
+        }
     }
 
     &__button-title {
@@ -77,6 +95,10 @@
         padding: 32.5rem 27.5rem;
         position: absolute;
         right: -1rem;
+        @include desktop-small {
+            margin-inline: auto;
+            padding: 29.5rem 25.5rem;
+        }
     }
 
     &__box {
@@ -85,6 +107,11 @@
         @include desktop-for-skillineIs-section {
             padding-right: 130rem;
         }
+        @include desktop-small {
+            padding: 0;
+            justify-content: center;
+        }
+        
     }
 
     &__item {
@@ -96,9 +123,13 @@
 
     &__image {
         display: flex;
+        justify-content: center;
         border-radius: 20rem;
         img {
             border-radius: 20rem;
+            @include desktop-small {
+                width: 80%;
+            }
         }
     }
 

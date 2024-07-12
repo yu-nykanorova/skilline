@@ -1,5 +1,6 @@
 .header {
     background: var(--c-orange-light-first);
+    position: relative;
 
     &-container {
         padding-top: 60rem;
@@ -16,9 +17,20 @@
         @include desktop-medium {
             gap: 50rem;
         }
+        @include desktop-small {
+            gap: 30rem;
+        }
+        @include tablet {
+            gap:  40rem;
+        }
     }
 
-    &__menu {}
+    &__menu {
+        @include tablet {
+            position: absolute;
+            top: -100%;
+        }
+    }
 
     &__link {
         font-weight: 400;
@@ -27,10 +39,23 @@
         color: var(--c-grey-menu);
     }
 
+    &__burger {
+        display: none;
+        @include tablet {
+            display: block;
+        }
+    }
+
     &__buttons {
         display: flex;
         gap: 34rem;
         align-items: center;
+        @include desktop-small {
+            gap: 20rem;
+        }
+        @include tablet {
+            gap: 40rem;
+        }
     }
 
     &__login-button, &__signup-button {
@@ -45,11 +70,17 @@
         color: var(--c-grey-login-button);
         background: var(--c-white);
         box-shadow: 0 20px 24px 0 rgba(0, 0, 0, 0.03);
+        @include desktop-small {
+            padding-inline: 30rem;
+        }
     }
 
     &__signup-button {
         padding: 13rem 36rem;
         color: var(--c-white);
         background: var(--c-orange-first);
+        @include desktop-small {
+            padding-inline: 30rem;
+        }
     }
 }
