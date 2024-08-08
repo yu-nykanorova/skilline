@@ -1,8 +1,10 @@
 .testimonial {
     &-container {
+        position: relative;
         margin-bottom: 150rem;
         display: flex;
         justify-content: space-between;
+        gap: 30rem;
         @include desktop-for-skillineIs-section {
             gap: 20rem;
         }
@@ -102,8 +104,8 @@
     }
 
     &__box {
-        padding: 0 189rem 121rem 0;
-        display: flex;
+        //display: flex;
+        position: relative;
         @include desktop-for-skillineIs-section {
             padding-right: 130rem;
         }
@@ -116,17 +118,24 @@
 
     &__item {
         position: relative;
-        &:nth-child(2) {
-            display: none;
-        }
+        padding: 0 189rem 121rem 0;
+        max-width: 780rem;
+        background: var(--c-white);
+        // &:nth-child(2) {
+        //     display: none;
+        // }
     }
 
     &__image {
         display: flex;
-        justify-content: center;
         border-radius: 20rem;
+        width: 100%;
+        max-height: 700rem;
+        padding-inline: 2rem;
         img {
             border-radius: 20rem;
+            width: 100%;
+            height: 100%;
             @include desktop-small {
                 width: 80%;
             }
@@ -135,16 +144,45 @@
 
     &__text-box {
         position: absolute;
-        bottom: -121rem;
-        right: -189rem;
+        bottom: 0;
+        right: 0;
+        margin-right: 2rem;
     }
 
     &__right-arrow {
         position: absolute;
-        right: 0;
-        top: 40%;
+        width: 80rem;
+        height: 80rem;
+        background: var(--c-white);
+        border-radius: 100%;
+        box-shadow: 0 4px 60px 0 rgba(41, 44, 124, 0.15);
+        right: 12%;
+        top: 35%;
         font-size: 24rem;
         font-weight: 600;
-        color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
     }
 }
+
+// Slick-carousel
+
+.slick-slider {
+    width: 50%;
+    height: 100%;
+}
+
+.slick-slide {
+}
+
+
+
+
+
+
+
+
+
+

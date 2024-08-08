@@ -1,5 +1,11 @@
+
 import { Link } from "react-router-dom";
 import { TextBox } from "../../shared/components/TextBox";
+import React, { useRef } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.scss";
+import "slick-carousel/slick/slick-theme.scss";
+
 
 export const Testimonial = () => {
   const comments = [
@@ -10,12 +16,24 @@ export const Testimonial = () => {
       reviews: 12
     },
     {
-      image: "src/assets/image/testimonials/testimonial_smiling_girl.jpg",
+      image: "src/assets/image/testimonials/testimonial_writing_girl.jpg",
       text: '"Thank you so much for your help. It`s exactly what I`ve been looking for. You won`t regret it. It really saves me time and effort. Skilline is exactly what our business has been lacking."',
       name: "Veronica Stain",
       reviews: 7
     }
   ];
+
+  const sliderArr = useRef(null);
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    className: "testimonial__box",
+    arrows: false
+  };
   
   return (
     <section className="testimonial">
@@ -41,16 +59,20 @@ export const Testimonial = () => {
               </Link>
             </div>
           </div>
-          <div className="testimonial__box">
+          <Slider ref={sliderArr} {...settings}>
             {comments.map((comment, index) => (
               <div key={index} className="testimonial__item">
                 <div className="testimonial__image">
                   <img src={comment.image} alt="smilimg girl with books" />
                 </div>
                 <TextBox className="testimonial__text-box" text={comment.text} name={comment.name} reviews={comment.reviews} />
-                <div className="testimonial__right-arrow">ARROW</div>
               </div>
             ))}
+          </Slider>
+          <div className="testimonial__right-arrow" onClick={() => sliderArr.current.slickNext()}>
+            <svg width="18" height="24" viewBox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 2L14 12L2 22" stroke="#1EA4CE" strokeWidth="4" />
+            </svg>  
           </div>
         </div>
       </div>

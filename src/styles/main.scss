@@ -4,6 +4,11 @@
 @import './utils/mixins';
 @import './utils/base';
 
+//slick
+@import 'node_modules/slick-carousel/slick/slick.scss';
+@import 'node_modules/slick-carousel/slick/slick-theme.scss';
+
+
 //shared
 @import './shared/footer';
 @import './shared/header';
@@ -16,7 +21,6 @@
 @import './shared/components/newsMain';
 @import './shared/components/newsListItem';
 @import './shared/components/burger';
-
 
 //pages
 @import './pages/home/home';
