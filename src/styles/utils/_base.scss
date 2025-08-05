@@ -18,28 +18,14 @@ body {
 
 .page-wrapper {
 	position: relative;
-	// display: grid;
-	// grid-template-rows: auto 1fr auto;
 }
 
 .container {
 	max-width: 1920rem;
 	padding: 0 126rem 0 100rem;
-	border: 2px solid palegreen;
 	@include desktop-for-skillineIs-section {
 		padding: 0 80rem 0 60rem;
 	}
-	@include desktop-medium {
-		padding-inline: 60rem;
-	}
-	@include desktop-small {
-		padding-inline: 30rem;
-	}
-}
-
-.small-container {
-	padding: 0 60rem 0 92rem;
-	border: 2px solid red;
 	@include desktop-medium {
 		padding-inline: 60rem;
 	}
@@ -70,4 +56,13 @@ body {
 	font-weight: 400;
 	line-height: 180%;
 	color: var(--c-grey-desc-first);
+}
+
+.under-construction {
+	padding: 20% 30%;
+	text-align: center;
+	p {
+		color: red;
+		font-size: 36rem;
+	}
 }

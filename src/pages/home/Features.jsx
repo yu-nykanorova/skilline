@@ -3,7 +3,7 @@ export const Features = () => {
   return (
     <section className="features">
       <div className="container mi">
-        <div className="small-container features-container">
+        <div className="features-container">
           <h2 className="title-color features__title">Our <span className="title-decor-color">Features</span></h2>
           <p className="desc features__desc">This very extraordinary feature, can make learning activities more efficient</p>
           <div className="features__list">

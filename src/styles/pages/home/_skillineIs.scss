@@ -1,9 +1,10 @@
 .skilline-is {
-    &-container {}
+    &-container {
+        padding: 0 60rem 0 86rem;
+    }
 
     &__for-whom {
         padding: 0 123rem 0 118rem;
-        border: 2px solid black;
         @include desktop-for-skillineIs-section {
             padding-inline: 80rem;
         }
@@ -132,7 +133,6 @@
         margin-bottom: 160rem;
         padding: 20rem;
         position: relative;
-        border: 2px solid black;
         @include desktop-small {
             flex-direction: column;
             justify-content: center;

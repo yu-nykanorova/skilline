@@ -5,18 +5,20 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.scss";
 import "slick-carousel/slick/slick-theme.scss";
+import commentAvatarFirst from '../../assets/image/testimonials/testimonial_smiling_girl.jpg';
+import commentAvatarSecond from '../../assets/image/testimonials/testimonial_writing_girl.jpg';
 
 
 export const Testimonial = () => {
   const comments = [
     {
-      image: "src/assets/image/testimonials/testimonial_smiling_girl.jpg",
+      image: commentAvatarFirst,
       text: '"Thank you so much for your help. It`s exactly what I`ve been looking for. You won`t regret it. It really saves me time and effort. Skilline is exactly what our business has been lacking."',
       name: "Gloria Rose",
       reviews: 12
     },
     {
-      image: "src/assets/image/testimonials/testimonial_writing_girl.jpg",
+      image: commentAvatarSecond,
       text: '"Thank you so much for your help. It`s exactly what I`ve been looking for. You won`t regret it. It really saves me time and effort. Skilline is exactly what our business has been lacking."',
       name: "Veronica Stain",
       reviews: 7
@@ -26,19 +28,22 @@ export const Testimonial = () => {
   const sliderArr = useRef(null);
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     className: "testimonial__box",
-    arrows: false
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    pauseOnHover: true
   };
   
   return (
     <section className="testimonial">
       <div className="container mi">
-        <div className="small-container testimonial-container">
+        <div className="testimonial-container">
           <div className="testimonial__info">
             <div className="testimonial__label">
               <div className="testimonial__label-line"></div>
@@ -52,7 +57,7 @@ export const Testimonial = () => {
             </div>
             <div className="testimonial__button">
               <div className="testimonial__button-title">Write your assessment</div>
-              <Link className="testimonial__button-arrow">
+              <Link className="testimonial__button-arrow" to="/testimonials">
                 <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.2929L19.3431 0.928934C18.9526 0.53841 18.3195 0.538409 17.9289 0.928934C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM-8.74228e-08 9L25 9L25 7L8.74228e-08 7L-8.74228e-08 9Z" fill="#F48C06" />
                 </svg>

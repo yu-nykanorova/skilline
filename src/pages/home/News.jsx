@@ -19,7 +19,7 @@ export const News = () => {
   return (
     <div className="news">
       <div className="container mi">
-        <div className="small-container news-container">
+        <div className="news-container">
           <h3 className="title-color news__title">Lastest News and Resources</h3>
           <p className="desc news__desc">See the developments that have occurred to Skillines in the world</p>
           <div className="news__data">

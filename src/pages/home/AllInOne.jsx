@@ -7,7 +7,7 @@ export const AllInOne = () => {
   return (
     <section className="all-in-one">
       <div className="container mi">
-        <div className="small-container all-in-one-container">
+        <div className="all-in-one-container">
           <h2 className="title-color all-in-one__title">All-In-One <span className="title-decor-color">Cloud Software.</span></h2>
           <p className="desc all-in-one__desc">Skilline is one powerful online software suite that combines all the tools needed to run a successful school or office.</p>
           <div className="all-in-one__list">

@@ -5,7 +5,7 @@ export const SkillineIs = () => {
   return (
     <section className="skilline-is">
       <div className="container mi">
-        <div className="small-container skilline-is-container">
+        <div className="skilline-is-container">
           <div className="skilline-is__for-whom">
             <h2 className="title-color skilline-is__for-whom-title">What is <span className="title-decor-color">Skilline?</span></h2>
             <p className="desc skilline-is__for-whom-desc">Skilline is a platform that allows educators to create online classes whereby they can store the course materials online; manage assignments, quizzes and exams; monitor due dates; grade results and provide students with feedback all in one place.</p>

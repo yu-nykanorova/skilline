@@ -1,6 +1,7 @@
 .news {
     &-container {
         margin-bottom: 233rem;
+        padding: 0 37rem 0 100rem;
         @include desktop-medium {
             margin-bottom: 150rem;
         }

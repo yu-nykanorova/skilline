@@ -1,7 +1,8 @@
 .testimonial {
     &-container {
         position: relative;
-        margin-bottom: 150rem;
+        margin-bottom: 90rem;
+        padding: 0 15rem 0 100rem;
         display: flex;
         justify-content: space-between;
         gap: 30rem;
@@ -106,6 +107,7 @@
     &__box {
         //display: flex;
         position: relative;
+
         @include desktop-for-skillineIs-section {
             padding-right: 130rem;
         }
@@ -119,18 +121,15 @@
     &__item {
         position: relative;
         padding: 0 189rem 121rem 0;
-        max-width: 780rem;
+        max-width: 749rem;
         background: var(--c-white);
-        // &:nth-child(2) {
-        //     display: none;
-        // }
     }
 
     &__image {
         display: flex;
         border-radius: 20rem;
         width: 100%;
-        max-height: 700rem;
+        height: 700rem;
         padding-inline: 2rem;
         img {
             border-radius: 20rem;
@@ -156,7 +155,7 @@
         background: var(--c-white);
         border-radius: 100%;
         box-shadow: 0 4px 60px 0 rgba(41, 44, 124, 0.15);
-        right: 12%;
+        right: 210rem;
         top: 35%;
         font-size: 24rem;
         font-weight: 600;
@@ -170,12 +169,25 @@
 // Slick-carousel
 
 .slick-slider {
-    width: 50%;
+    width: 809rem;
     height: 100%;
 }
 
-.slick-slide {
+.slick-list {
+    width: 100%;
 }
+
+.slick-track {
+    height: 881rem;
+}
+
+.slick-slide {
+    width: 100%;
+    div {
+        width: 100%;
+    }
+}
+
 
 
 
