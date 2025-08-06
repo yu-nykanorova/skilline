@@ -1,8 +1,13 @@
+import newsLaptop from "../assets/image/news/news_laptop.jpg";
+import newsGirl from "../assets/image/news/news_girl.jpg";
+import newsSilhouette from "../assets/image/news/news_silhouette.jpg";
+import newsCat from "../assets/image/news/news_cat.jpg";
+
 export const news = [
     {
         id: 1,
         image: {
-            src: "src/assets/image/news/news_laptop.jpg",
+            src: newsLaptop,
             alt: "laptop"
         },
         title: "Class adds $30 million to its balance sheet for a Zoom-friendly edtech solution",
@@ -14,7 +19,7 @@ export const news = [
     {
         id: 2,
         image: {
-            src: "src/assets/image/news/news_girl.jpg",
+            src: newsGirl,
             alt: "girl with tablet"
         },
         title: "Class Technologies Inc. Closes $30 Million Series A Financing to Meet High Demand",
@@ -26,7 +31,7 @@ export const news = [
     {
         id: 3,
         image: {
-            src: "src/assets/image/news/news_silhouette.jpg",
+            src: newsSilhouette,
             alt: "person with laptop"
         },
         title: "Zoom`s earliest investors are betting millions on a better Zoom for schools",
@@ -38,7 +43,7 @@ export const news = [
     {
         id: 4,
         image: {
-            src: "src/assets/image/news/news_cat.jpg",
+            src: newsCat,
             alt: "cat behind the laptop"
         },
         title: "Former Blackboard CEO Raises $16M to Bring LMS Features to Zoom Classrooms",

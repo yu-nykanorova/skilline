@@ -55,6 +55,11 @@
         letter-spacing: 0.02em;
         text-decoration: underline;
         text-decoration-skip-ink: none;
+        transition: var(--transition);
+
+        &:hover {
+            color: var(--c-blue-first);
+        }
     }
 
     &__list {

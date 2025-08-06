@@ -7,7 +7,7 @@
         justify-content: space-between;
         gap: 30rem;
         @include desktop-for-skillineIs-section {
-            gap: 20rem;
+            //gap: 20rem;
         }
         @include desktop-small {
             flex-direction: column;
@@ -77,6 +77,15 @@
         border-radius: 80rem;
         padding: 23rem 0 23rem 38rem;
         position: relative;
+        cursor: pointer;
+
+        &:hover .testimonial__button-arrow {
+            background-color: var(--c-orange-first);
+            svg path {
+                fill: var(--c-orange-light-first);
+            }
+        }
+
         @include desktop-small {
             margin-inline: auto;
             padding: 20rem 0 20rem 30rem;
@@ -98,6 +107,8 @@
         padding: 32.5rem 27.5rem;
         position: absolute;
         right: -1rem;
+        transition: var(--transition);
+
         @include desktop-small {
             margin-inline: auto;
             padding: 29.5rem 25.5rem;
@@ -108,9 +119,9 @@
         //display: flex;
         position: relative;
 
-        @include desktop-for-skillineIs-section {
-            padding-right: 130rem;
-        }
+        // @include desktop-for-skillineIs-section {
+        //     padding-right: 130rem;
+        // }
         @include desktop-small {
             padding: 0;
             justify-content: center;
@@ -131,6 +142,11 @@
         width: 100%;
         height: 700rem;
         padding-inline: 2rem;
+
+        @include desktop-for-skillineIs-section {
+            height: auto;
+        }
+
         img {
             border-radius: 20rem;
             width: 100%;
@@ -171,6 +187,10 @@
 .slick-slider {
     width: 809rem;
     height: 100%;
+
+    @include desktop-for-skillineIs-section {
+        width: 700rem;
+    }
 }
 
 .slick-list {

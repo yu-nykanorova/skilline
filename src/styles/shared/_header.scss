@@ -3,10 +3,21 @@
     position: relative;
 
     &-container {
-        padding-block: 60rem 10rem;
+        max-width: 1920rem;
+        padding: 60rem 126rem 20rem 100rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include desktop-for-skillineIs-section {
+            padding: 60rem 80rem 20rem 60rem;
+        }
+        @include desktop-medium {
+            padding: 60rem 60rem 15rem 60rem;
+        }
+        @include desktop-small {
+            padding-inline: 50rem 30rem 10rem 30rem;
+        }
     }
 
     &__nav, &__menu {
@@ -58,10 +69,17 @@
     }
 
     &__login-button, &__signup-button {
+        width: 160rem;
         font-weight: 500;
         font-size: 22rem;
         letter-spacing: 0.02em;
         border-radius: 80rem;
+        text-align: center;
+        transition: var(--transition);
+
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 
     &__login-button {

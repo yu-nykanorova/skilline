@@ -5,7 +5,7 @@ import { Burger } from "../components/Burger";
 export const Header = () => {
   return (
     <header className="header">
-      <div className="container mi header-container">
+      <div className="mi header-container">
         <div className="header__logo">
           <Logo isFilled={true} isWhite={false} />
         </div>

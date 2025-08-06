@@ -35,9 +35,9 @@ export const Testimonial = () => {
     slidesToScroll: 1,
     className: "testimonial__box",
     arrows: false,
-    autoplay: true,
+    //autoplay: true,
     autoplaySpeed: 2500,
-    pauseOnHover: true
+    //pauseOnHover: true
   };
   
   return (

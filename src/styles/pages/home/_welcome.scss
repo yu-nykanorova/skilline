@@ -2,14 +2,14 @@
     background: var(--c-orange-light-first);
 
     &-container {
-        padding-top: 106rem;
+        padding-top: 96rem;
         display: flex;
         justify-content: space-between;
         @include desktop-medium {
-            padding-top: 80rem;
+            padding-top: 70rem;
         }
         @include desktop-small {
-            padding-top: 40rem;
+            padding-top: 30rem;
         }
     }
 

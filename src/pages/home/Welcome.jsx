@@ -6,6 +6,7 @@ import { IconCalendarBlue } from "../../shared/components/IconCalendarBlue";
 import { IconEnvelopeOrange } from "../../shared/components/IconEnvelopeOrange";
 import { IconUser } from "../../shared/components/IconUser";
 import { IconChecked } from "../../shared/components/IconChecked";
+import welcomeImage from "../../assets/image/lovely-teenage-girl.png";
 
 export const Welcome = () => {
   return (
@@ -23,7 +24,7 @@ export const Welcome = () => {
           </div>
         </div>
         <div className="welcome__image">
-          <img src="src/assets/image/lovely-teenage-girl.png" alt="welcome teenage girl" />
+          <img src={ welcomeImage } alt="welcome teenage girl" />
           <IconRating className="icon-rating" />
           <ContainerWhite className="container-white-calendar">
             <div className="container-white-content">

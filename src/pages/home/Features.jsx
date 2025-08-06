@@ -1,3 +1,7 @@
+import toolsForTeachers from "../../assets/image/features/tools_for_teachers.jpg";
+import assessments from "../../assets/image/features/assessments.jpg";
+import classManagement from "../../assets/image/features/class_management.jpg";
+import discussions from "../../assets/image/features/discussions.jpg";
 
 export const Features = () => {
   return (
@@ -14,7 +18,7 @@ export const Features = () => {
   Teachers can handout assignments in real-time for students to complete and submit.</p>
               </div>
               <div className="features__item-image">
-                <img src="src/assets/image/features/tools_for_teachers.jpg" alt="girl" />
+                <img src={ toolsForTeachers } alt="girl" />
               </div>
             </div>
             <div className="features__item">
@@ -24,7 +28,7 @@ export const Features = () => {
 Student results are automatically entered in the online gradebook.</p>
               </div>
               <div className="features__item-image">
-                <img src="src/assets/image/features/assessments.jpg" alt="test example" />
+                <img src={ assessments } alt="test example" />
               </div>
             </div>
             <div className="features__item">
@@ -33,7 +37,7 @@ Student results are automatically entered in the online gradebook.</p>
                 <p className="desc features__item-desc">Class provides tools to help run and manage the class such as Class Roster, Attendance, and more. With the Gradebook, teachers can review and grade tests and quizzes in real-time.</p>
               </div>
               <div className="features__item-image">
-                <img src="src/assets/image/features/class_management.jpg" alt="grade book" />
+                <img src={ classManagement } alt="grade book" />
               </div>
             </div>
             <div className="features__item">
@@ -42,7 +46,7 @@ Student results are automatically entered in the online gradebook.</p>
                 <p className="desc features__item-desc">Teachers and teacher assistants can talk with students privately without leaving the Zoom environment.</p>
               </div>
               <div className="features__item-image">
-                <img src="src/assets/image/features/discussions.jpg" alt="girl" />
+                <img src={ discussions } alt="girl" />
               </div>
             </div>
           </div>

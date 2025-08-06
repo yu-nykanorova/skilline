@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import { WatchButton } from "../../shared/components/WatchButton";
+import forInstructors from "../../assets/image/about/for_instructors.png";
+import forStudents from "../../assets/image/about/for_students.png";
+import videoBG from "../../assets/image/about/skilline-is_video-bg.jpg";
 
 export const SkillineIs = () => {
   return (
@@ -12,14 +15,14 @@ export const SkillineIs = () => {
             <div className="skilline-is__for-whom-list">
               <div className="skilline-is__for-whom-item">
                 <div className="item-image">
-                  <img src="src/assets/image/about/for_instructors.png" alt="teacher near the board" />
+                  <img src={ forInstructors } alt="teacher near the board" />
                 </div>
                 <div className="item-title">FOR INSTRUCTORS</div>
                 <Link className="item-button item-button-transparent">Start a class today</Link>
               </div>
               <div className="skilline-is__for-whom-item">
                 <div className="item-image">
-                <img src="src/assets/image/about/for_students.png" alt="students" />
+                <img src={ forStudents } alt="students" />
                 </div>           
                 <div className="item-title">FOR STUDENTS</div>
                 <Link className="item-button item-button-blue">Enter access code</Link>
@@ -35,7 +38,7 @@ export const SkillineIs = () => {
               <div className="circle-yellow-small"></div>
             </div>
             <div className="skilline-is__video-box">
-              <img src="src/assets/image/about/skilline-is_video-bg.jpg" alt="classroom" />
+              <img src={ videoBG } alt="classroom" />
               <WatchButton className="skilline-is__watch-button" />
               <div className="square-blue"></div>
               <div className="square-yellow"></div>

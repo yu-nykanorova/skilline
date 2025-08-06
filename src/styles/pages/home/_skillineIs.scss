@@ -110,6 +110,13 @@
                     background: transparent;
                     border: 1px solid var(--c-white);
                     padding: 24rem 37rem;
+                    transition: var(--transition);
+
+                    &:hover {
+                        background-color: var(--c-white);
+                        color: var(--c-blue-first);
+                    }
+
                     @include desktop-for-skillineIs-section {
                         padding: 10rem 13rem;
                     }
@@ -117,6 +124,8 @@
                 &-blue {
                     background: rgba(35, 189, 238, 0.9);
                     padding: 24rem 40rem;
+                    transition: var(--transition);
+
                     @include desktop-for-skillineIs-section {
                         padding: 10rem 15rem;
                     }
@@ -188,6 +197,11 @@
             text-decoration: underline;
             text-decoration-skip-ink: none;
             color: var(--c-grey-desc-first);
+            transition: var(--transition);
+
+            &:hover {
+                color: var(--c-blue-first);
+            }
         }
 
         &-box {
@@ -226,9 +240,11 @@
     }
 
     &__watch-button {
+        display: flex;
         position: absolute;
         top: calc(50% - 40rem);
         left: calc(50% - 40rem);
         cursor: pointer;
+        z-index: 2;
     }
 }

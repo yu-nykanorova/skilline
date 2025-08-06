@@ -1,8 +1,16 @@
 import { Link } from "react-router-dom";
+import { motion } from "motion/react";
 import { Logo } from "../../shared/components/Logo"; 
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
+
+  const transition = {
+    duration: 0.7,
+    repeat: Infinity,
+    repeatType: "loop",
+    ease: "easeInOut"
+  }
 
   return (
     <footer className="footer">
@@ -17,7 +25,16 @@ export const Footer = () => {
           <div className="subscribe-title">Subscribe to get our Newsletter</div>
           <div className="subscribe-data">
             <input type="email" className="subscribe-email" placeholder="Your Email" />
-            <button type="submit" className="subscribe-button">Subscribe</button>
+            <motion.button
+              type="submit"
+              className="subscribe-button"
+              whileHover={{
+                scale: [1, 1.1, 1],
+                transition: transition
+              }}
+            >
+              Subscribe
+            </motion.button>
           </div>
         </div>
         <div className="footer__info">

@@ -18,8 +18,6 @@
         max-width: 400rem;
     }
 
-    &__logo {}
-
     &__company-desc {
         font-weight: 600;
         font-size: 22rem;
@@ -56,6 +54,7 @@
             align-items: center;
             justify-content: space-between;
             max-width: 600rem;
+
             .subscribe-email {
                 font-weight: 400;
                 font-size: 22rem;
@@ -67,11 +66,17 @@
                 border-radius: 80rem;
                 padding: 15rem 30rem;
                 width: 66%;
+                transition: var(--transition);
+                
                 &::placeholder {
                     font-weight: 400;
                     font-size: 20rem;
                     letter-spacing: 0.04em;
                     color: var(--c-grey-subscribe-email);
+                }
+
+                &:focus {
+                    border: 1px solid var(--c-orange-light-first);
                 }
             }
 
@@ -103,6 +108,7 @@
         text-align: center;
         color: var(--c-grey-subscribe);
         position: relative;
+        transition: var(--transition);
         &:nth-child(2)::before, &:nth-child(2)::after {
             content: "";
             display: block;
@@ -120,6 +126,10 @@
         &:nth-child(2)::after {
             top: 8rem;
             right: -21rem;
+        }
+
+        &:hover {
+            color: var(--c-orange-light-first);
         }
     }
 

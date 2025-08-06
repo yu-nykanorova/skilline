@@ -101,6 +101,13 @@
             color: var(--c-orange-first);
             margin-top: 106rem;
             text-align: center;
+            transition: var(--transition);
+
+            &:hover {
+                background-color: var(--c-orange-first);
+                color: var(--c-orange-light-first);
+            }
+
             @include desktop-medium {
                 margin-top: 70rem;
             }
