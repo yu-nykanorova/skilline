@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 export const TextBox = ({ text, name, reviews, className }) => {
     const stars = [];
     for (let i = 0; i < 5; i++) {
-        stars.push(<IconStar key={i} />);
+        stars.push(<IconStar className="text-box_icon-star" key={i} />);
     }
   return (
     <div className={`text-box ${className}`}>

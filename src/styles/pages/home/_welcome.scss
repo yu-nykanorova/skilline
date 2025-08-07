@@ -5,11 +5,15 @@
         padding-top: 96rem;
         display: flex;
         justify-content: space-between;
+        width: 100%;
         @include desktop-medium {
             padding-top: 70rem;
         }
         @include desktop-small {
             padding-top: 30rem;
+        }
+        @include tablet {
+            flex-direction: column;
         }
     }
 
@@ -25,6 +29,10 @@
             flex: 0 0 calc(55% - 13rem);
             padding-bottom: 40rem;
         }
+        @include tablet {
+            flex: initial;
+            padding: 30rem;
+        }
     }
 
     &__title {
@@ -34,6 +42,9 @@
         @include desktop-small {
             padding-top: 40rem;
             font-size: 48rem;
+        }
+        @include tablet {
+            padding-top: 20rem;
         }
     }
 
@@ -48,6 +59,9 @@
         @include desktop-small {
             max-width: 350rem;
             margin-bottom: 30rem;
+        }
+        @include tablet {
+            max-width: 100%;
         }
     }
 
@@ -128,6 +142,12 @@
             flex: 0 1 calc(45% - 13rem);
             align-self: flex-end;
         }
+        @include tablet {
+            padding: 0;
+            flex:initial;
+            width: 50%;
+            margin-inline: auto;
+        }
         img {
             height: 100%;
             margin-inline: auto;
@@ -135,9 +155,6 @@
                 width: 100%;
                 height: auto;
                 object-fit: contain;
-            }
-            @include desktop-small {
-                
             }
         }
 
@@ -155,6 +172,12 @@
                 top: 10%;
                 right: -5%;
             }
+            @include tablet {
+                width: 90rem;
+                height: 90rem;
+                top: 10%;
+                right: -20%;
+            }
         }
 
         .container-white-content {
@@ -166,7 +189,7 @@
                 gap: 20rem;
             }
             @include desktop-small {
-            gap: 14rem;
+                gap: 14rem;
             }
 
             .icon-checked {
@@ -186,6 +209,11 @@
                     @include desktop-small {
                         font-size: 18rem;
                     }
+                    @include tablet-small {
+                        font-size: 16rem;
+                        font-weight: 600;
+                        line-height: 100%;
+                    }
                 }
 
                 .container-white-desc {
@@ -197,6 +225,11 @@
                     color: var(--c-grey-desc-third);
                     @include desktop-small {
                         font-size: 16rem;
+                    }
+                    @include tablet-small {
+                        font-size: 14rem;
+                        font-weight: 400;
+                        line-height: 100%;
                     }
                 }
             }
@@ -231,6 +264,9 @@
             @include desktop-small {
                 top: 60%;
             }
+            @include tablet {
+                right: -20%;
+            }
         }
 
         .container-white-join {
@@ -252,6 +288,13 @@
                 bottom: 0;
                 left: -15%;
             }
+            @include tablet {
+                left: -30%;
+            }
+            @include tablet-small {
+                left: -40%;
+                padding: 5rem;
+            }
 
             .container-white-button {
                 padding: 12rem 47rem;
@@ -270,6 +313,10 @@
                 @include desktop-small {
                     padding: 12rem 18rem;
                     font-size: 16rem;
+                }
+                @include tablet-small {
+                    padding: 8rem 12rem;
+                    font-size: 12rem;
                 }
             }
         }

@@ -7,6 +7,13 @@
     position: relative;
     @include desktop-for-skillineIs-section {
         padding: 30rem 40rem;
+        max-width: 540rem;
+    }
+    @include desktop-medium {
+        max-width: 100%;
+    }
+    @include tablet-small {
+        padding: 10rem 20rem;
     }
     &::before {
         content: "";
@@ -33,6 +40,10 @@
         @include desktop-for-skillineIs-section {
             font-size: 18rem;
             margin-bottom: 20rem;
+        }
+        @include tablet-small {
+            font-size: 16rem;
+            margin-bottom: 10rem;
         }
 
         &::before {
@@ -63,6 +74,9 @@
             @include desktop-for-skillineIs-section {
                 font-size: 20rem;
             }
+            @include tablet-small {
+                font-size: 16rem;
+            }
         }
         .comment-rating {
 
@@ -71,6 +85,10 @@
                 justify-content: flex-end;
                 gap: 4rem;
                 margin-bottom: 12rem;
+
+                .text-box_icon-star svg {
+                    width: 16rem;
+                }
             }
 
             .comment-reviews {
@@ -80,6 +98,10 @@
                 line-height: 180%;
                 letter-spacing: 0.02em;
                 color: var(--c-grey-testimonial-reviews);
+
+                @include tablet-small {
+                    font-size: 16rem;
+                }
             }
         }
     }

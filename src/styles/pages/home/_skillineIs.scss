@@ -1,6 +1,9 @@
 .skilline-is {
     &-container {
         padding: 0 60rem 0 86rem;
+        @include tablet-small {
+            padding: 0 30rem;
+        }
     }
 
     &__for-whom {
@@ -10,6 +13,9 @@
         }
         @include desktop-medium {
             padding-inline: 60rem;
+        }
+        @include tablet-small {
+            padding-inline: 30rem;
         }
         
         
@@ -147,6 +153,9 @@
             justify-content: center;
             text-align: center;
             margin-bottom: 120rem;
+        }
+        @include tablet-small {
+            margin-bottom: 80rem;
         }
         
         &-info {

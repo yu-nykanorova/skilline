@@ -8,6 +8,10 @@
         @include desktop-medium {
             margin-bottom: 120rem;
         }
+        
+        @include tablet-small {
+            padding: 0 30rem;
+        }
     }
 
     &__title {

@@ -5,6 +5,9 @@
         @include desktop-small {
             margin-bottom: 120rem;
         }
+        @include tablet-small {
+            margin-bottom: 80rem;
+        }
     }
     
     &__title {
@@ -51,9 +54,16 @@
         @include desktop-small {
             gap: 20rem;
         }
+        @include tablet-small {
+            flex-direction: column;
+        }
 
         &:nth-child(even) {
             flex-direction: row-reverse;
+            
+            @include tablet-small {
+                flex-direction: column;
+            }
         }       
 
         &-info {
@@ -110,6 +120,9 @@
 
             @include desktop-medium {
                 margin-top: 70rem;
+            }
+            @include tablet-small {
+                margin-top: 20rem;
             }
         }
     }

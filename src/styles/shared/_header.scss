@@ -16,7 +16,7 @@
             padding: 60rem 60rem 15rem 60rem;
         }
         @include desktop-small {
-            padding-inline: 50rem 30rem 10rem 30rem;
+            padding: 50rem 30rem 10rem 30rem;
         }
     }
 
@@ -66,6 +66,9 @@
         @include tablet {
             gap: 40rem;
         }
+        @include tablet-small {
+            gap: 10rem;
+        }
     }
 
     &__login-button, &__signup-button {
@@ -80,6 +83,11 @@
         &:hover {
             transform: scale(1.05);
         }
+
+        @include tablet-small {
+            width: 120rem;
+            font-size: 16rem;
+        }
     }
 
     &__login-button {
@@ -90,6 +98,9 @@
         @include desktop-small {
             padding-inline: 30rem;
         }
+        @include tablet-small {
+            padding: 10rem 24rem;
+        }
     }
 
     &__signup-button {
@@ -98,6 +109,9 @@
         background: var(--c-orange-first);
         @include desktop-small {
             padding-inline: 30rem;
+        }
+        @include tablet-small {
+            padding: 10rem 24rem;
         }
     }
 }

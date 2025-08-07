@@ -38,6 +38,10 @@
         @include desktop-small {
             grid-template-columns: initial;
         }
+        @include tablet-small {
+            padding: 0 30rem;
+        }
+        
         &-item {
             padding: 120rem 54rem 50rem;
             border-radius: 20rem;
