@@ -15,6 +15,10 @@
         @include tablet-small {
             margin-bottom: 50rem;
         }
+        @include mobile {
+            padding: 0;
+            margin-bottom: 0;
+        }
     }
 
     &__info {
@@ -41,6 +45,9 @@
         font-size: 20rem;
         letter-spacing: 0.2em;
         color: var(--c-grey-testimonial);
+        @include mobile {
+            font-size: 16rem;
+        }
     }
 
     &__label-line {
@@ -48,6 +55,9 @@
         width: 80rem;
         height: 1rem;
         border: 1px solid var(--c-grey-testimonial);
+        @include mobile {
+            width: 50rem;
+        }
     }
 
     &__title {
@@ -57,6 +67,12 @@
         margin-bottom: 29rem;
         @include desktop-small {
             font-size: 44rem;
+        }
+        @include mobile {
+            font-size: 30rem;
+            font-weight: 500;
+            line-height: 120%;
+            margin-bottom: 20rem;
         }
     }
 
@@ -71,6 +87,10 @@
             gap: 10rem;
             font-size: 22rem;
             margin-bottom: 20rem;
+        }
+        @include mobile {
+            font-size: 20rem;
+            line-height: 140%;
         }
     }
 
@@ -96,6 +116,9 @@
             margin-inline: auto;
             padding: 20rem 0 20rem 30rem;
         }
+        @include mobile {
+            padding: 10rem 0 10rem 20rem;
+        }
     }
 
     &__button-title {
@@ -104,6 +127,10 @@
         line-height: 160%;
         letter-spacing: 0.02em;
         color: var(--c-orange-first);
+        @include mobile {
+            font-size: 18rem;
+            line-height: 140%;
+        }
     }
     
     &__button-arrow {
@@ -119,13 +146,17 @@
             margin-inline: auto;
             padding: 29.5rem 25.5rem;
         }
+        @include mobile {
+            margin-inline: auto;
+            padding: 14.5rem 10rem;
+        }
     }
 
     &__box {
         position: relative;
+        width: 100%;
+        overflow: hidden;
 
-        @include desktop-for-skillineIs-section {
-        }
         @include desktop-small {
             padding: 0;
             justify-content: center;
@@ -142,11 +173,10 @@
             padding: 0 150rem 91rem 0;
         }
         @include desktop-medium {
-            padding: 0;
+
         }
         @include desktop-small {
-            max-width: 100%;
-            height: 100%;
+
         }
     }
 
@@ -158,12 +188,12 @@
         padding-inline: 2rem;
 
         @include desktop-for-skillineIs-section {
-            height: auto;
+          
         }
         @include desktop-small {
-            align-items: center;
-            justify-content: center;
-            height: 100%;
+        }
+        @include mobile {
+
         }
 
         img {
@@ -171,10 +201,13 @@
             width: 100%;
             height: 100%;
             @include desktop-small {
-                max-width: 80%;
+
             }
             @include tablet-small {
-                max-width: 90%;
+
+            }
+            @include mobile {
+
             }
         }
     }
@@ -185,17 +218,16 @@
         right: 0;
         margin-right: 2rem;
         @include desktop-for-skillineIs-section {
-            right: 80rem;
-            bottom: 60rem;
+
         }
         @include desktop-medium {
-            right: -50rem;
-            bottom: -100rem;
+
         }
         @include desktop-small {
-            right: 0;
-            left: 0;
-            bottom: -50rem;
+
+        }
+        @include mobile {
+
         }
     }
 
@@ -214,72 +246,30 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        z-index: 2;
         @include desktop-for-skillineIs-section {
-            right: 100rem;
+
         }
         @include desktop-medium {
-            right: 30rem;
+
         }
         @include desktop-small {
-            right: 80rem;
-            top: 60%;
         }
         @include tablet-small {
-            right: 20rem;
+
+        }
+        @include mobile {
+
         }
     }
 }
 
-// Slick-carousel
-
-.slick-slider {
-    width: 809rem;
-    height: 100%;
-
-    @include desktop-medium {
-        width: 60%;
-    }
-    @include desktop-small {
-        width: 100%;
-    }
-}
-
-.slick-list {
-    width: 100%;
-    @include desktop-small {
-        height: 881rem;
-    }
-}
-
-.slick-track {
-    height: 881rem;
-}
-
-.slick-slide {
-    width: 100%;
-    @include desktop-medium {
-        padding: 0 120rem 0 0;
-    }
-    @include desktop-small {
-        padding: 0;
-    }
-    & > div {
-        @include desktop-medium {
-            height: 100%;
-            padding: 0 0 100rem 0;
-        }
-        @include desktop-small {
-            height: 100%;
-            padding: 0 60rem 100rem 60rem;
-        }
-    }
-}
-
-
-
-
-
-
+.swiper-slide {
+    width: 100% !important; 
+    box-sizing: border-box; 
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 
 
 

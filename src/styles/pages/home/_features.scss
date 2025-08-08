@@ -8,6 +8,9 @@
         @include tablet-small {
             margin-bottom: 80rem;
         }
+        @include mobile {
+            margin-bottom: 30rem;
+        }
     }
     
     &__title {
@@ -16,6 +19,11 @@
         line-height: 180%;
         text-align: center;
         margin-bottom: 20rem;
+        @include mobile {
+            font-weight: 500;
+            font-size: 30rem;
+            line-height: 120%;
+        }
     }
 
     &__desc {
@@ -24,6 +32,11 @@
         margin-bottom: 84rem;
         @include desktop-medium {
             margin-bottom: 70rem;
+        }
+        @include mobile {
+            font-size: 20rem;
+            line-height: 140%;
+            margin-bottom: 30rem;
         }
     }
 
@@ -37,6 +50,10 @@
         @include desktop-medium {
             padding-inline: 30rem;
             gap: 100rem;
+        }
+        @include desktop-medium {
+            padding-inline: 10rem;
+            gap: 40rem;
         }
     }
 
@@ -56,6 +73,9 @@
         }
         @include tablet-small {
             flex-direction: column;
+        }
+        @include mobile {
+            gap: 10rem;
         }
 
         &:nth-child(even) {
@@ -78,11 +98,21 @@
             @include desktop-medium {
                 font-size: 32rem;
             }
+            @include mobile {
+                font-size: 26rem;
+                line-height: 120%;
+                font-weight: 500;
+                margin-bottom: 10rem;
+            }
         }
 
         &-desc {
             font-size: 22rem;
             letter-spacing: 0.02em;
+            @include mobile {
+                font-size: 18rem;
+                line-height: 140%;
+            }
         }
 
         &-image {
@@ -113,16 +143,21 @@
             text-align: center;
             transition: var(--transition);
 
-            &:hover {
-                background-color: var(--c-orange-first);
-                color: var(--c-orange-light-first);
-            }
-
             @include desktop-medium {
                 margin-top: 70rem;
             }
             @include tablet-small {
                 margin-top: 20rem;
+            }
+            @include mobile {
+                font-size: 20rem;
+                line-height: 120%;
+                padding: 12rem 18rem;
+            }
+
+            &:hover {
+                background-color: var(--c-orange-first);
+                color: var(--c-orange-light-first);
             }
         }
     }

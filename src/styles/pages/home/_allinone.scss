@@ -7,6 +7,10 @@
             padding-top: 80rem;
             padding-bottom: 120rem;
         }
+        @include mobile {
+            padding-top: 30rem;
+            padding-bottom: 30rem;
+        }
     }
 
     &__title {
@@ -14,6 +18,11 @@
         font-size: 36rem;
         line-height: 180%;
         margin-bottom: 20rem;
+        @include mobile {
+            font-weight: 500;
+            font-size: 30rem;
+            line-height: 120%;
+        }
     }
 
     &__desc {
@@ -24,6 +33,11 @@
         margin-bottom: 160rem;
         @include desktop-small {
             margin-bottom: 120rem;
+        }
+        @include mobile {
+            font-size: 20rem;
+            line-height: 140%;
+            margin-bottom: 90rem;
         }
     }
 
@@ -41,6 +55,9 @@
         @include tablet-small {
             padding: 0 30rem;
         }
+        @include mobile {
+            padding: 0 10rem;
+        }
         
         &-item {
             padding: 120rem 54rem 50rem;
@@ -57,31 +74,58 @@
             @include desktop-small {
                 padding-top: 60rem;
             }
+            @include mobile {
+                gap: 10rem;
+                padding: 40rem 20rem 20rem 20rem;
+            }
             
             .item-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 position: absolute;
                 top: -57rem;
                 left: calc(50% - 50rem);
                 border-radius: 100%;
+
+                @include mobile {
+                    width: 70rem;
+                    height: 70rem;
+                    top: -35rem;
+                    left: calc(50% - 35rem);
+                }
+
                 &.item-icon-blue {
                     background: var(--c-blue-first);
                     padding: 27rem 33rem;
                     box-shadow: 0 10px 40px 0 rgba(54, 61, 136, 0.06);
+                    @include mobile {
+                        padding: 0;
+                    }
                 }
                 &.item-icon-orange {
                     background: var(--c-orange-first);
                     padding: 26rem;
                     box-shadow: 0 16px 40px 0 rgba(37, 44, 113, 0.1);
+                    @include mobile {
+                        padding: 0;
+                    }
                 }
                 &.item-icon-lightblue {
                     background: var(--c-blue-light-second);
                     padding: 28rem 22rem;
                     box-shadow: 0 10px 40px 0 rgba(54, 61, 136, 0.06);
+                    @include mobile {
+                        padding: 0;
+                    }
                 }
                 .icon-invoice, .icon-calendar, .icon-community {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    @include mobile {
+                        height: 30rem;
+                    }  
                 }
             }
 
@@ -90,12 +134,20 @@
                 font-size: 30rem;
                 text-align: center;
                 align-self: center;
+                @include mobile {
+                    font-size: 22rem;
+                    line-height: 120%;
+                }
             }
 
             .item-desc {
                 font-size: 20rem;
                 text-align: center;
                 align-self: flex-start;
+                @include mobile {
+                    font-size: 18rem;
+                    line-height: 140%;
+                }
             }
         }
     }

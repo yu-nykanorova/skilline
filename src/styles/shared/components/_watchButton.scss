@@ -1,4 +1,5 @@
 .watch-button {
+    display: flex;
     max-width: 80rem;
     max-height: 80rem;
     background: var(--c-white);
@@ -6,5 +7,19 @@
     border-radius: 50%;
     @include desktop-small {
         padding: 18rem 20rem 18rem 22rem;
+    }
+    @include mobile {
+        padding: 12rem 14rem 12rem 16rem;        
+    }
+
+    svg {
+        @include desktop-small {
+            width: 20rem;
+            height: 23rem;        
+        }            
+        @include mobile {
+            width: 15rem;
+            height: auto;        
+        }            
     }
 }

@@ -8,9 +8,11 @@
         @include desktop-medium {
             margin-bottom: 120rem;
         }
-        
         @include tablet-small {
             padding: 0 30rem;
+        }
+        @include mobile {
+            padding: 0 10rem;
         }
     }
 
@@ -21,6 +23,11 @@
         line-height: 180%;
         text-align: center;
         margin-bottom: 20rem;
+        @include mobile {
+            font-weight: 500;
+            font-size: 30rem;
+            line-height: 120%;
+        }
     }
 
     &__desc {
@@ -30,6 +37,11 @@
         margin-bottom: 100rem;
         @include desktop-small {
             margin-bottom: 60rem;
+        }
+        @include mobile {
+            font-size: 20rem;
+            line-height: 140%;
+            margin-bottom: 30rem;
         }
     }
 
@@ -44,6 +56,9 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+        }
+        @include mobile {
+            gap: 40rem;
         }
     }
 

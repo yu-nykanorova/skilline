@@ -8,6 +8,10 @@
         align-items: center;
         gap: 95rem;
 
+        @include mobile {
+            padding: 20rem 10rem;
+            gap: 60rem;
+        }
     }
 
     &__logo-info {
@@ -16,6 +20,10 @@
         justify-content: space-between;
         gap: 83rem;
         max-width: 400rem;
+
+        @include mobile {
+            gap: 40rem;
+        }
     }
 
     &__company-desc {
@@ -24,6 +32,11 @@
         letter-spacing: 0.04em;
         color: var(--c-white);
         position: relative;
+        
+        @include mobile {
+            font-weight: 500;
+            font-size: 20rem;
+        }
 
         &::before {
             content: "";
@@ -34,6 +47,10 @@
             width: 1rem;
             height: 83rem;
             background: #626381;
+
+            @include mobile {
+                left: -23rem;
+            }
         }
     }
 
@@ -47,6 +64,12 @@
             color: var(--c-grey-subscribe);
             margin-bottom: 20rem;
             padding: 0 80rem;
+
+            @include mobile {
+                padding: 0 20rem;
+                font-size: 20rem;
+                line-height: 120%;
+            }
         }
 
         .subscribe-data {
@@ -54,6 +77,12 @@
             align-items: center;
             justify-content: space-between;
             max-width: 600rem;
+            @include tablet-small {
+                gap: 10rem;
+            }
+            @include mobile {
+                flex-direction: column;
+            }
 
             .subscribe-email {
                 font-weight: 400;
@@ -67,12 +96,20 @@
                 padding: 15rem 30rem;
                 width: 66%;
                 transition: var(--transition);
+
+                @include mobile {
+                    width: 90%;
+                }
                 
                 &::placeholder {
                     font-weight: 400;
                     font-size: 20rem;
                     letter-spacing: 0.04em;
                     color: var(--c-grey-subscribe-email);
+                    
+                    @include mobile {
+                        font-size: 18rem;
+                    }
                 }
 
                 &:focus {
@@ -87,6 +124,10 @@
                 font-weight: 500;
                 font-size: 22rem;
                 color: var(--c-white);
+                
+                @include mobile {
+                    width: 90%;
+                }
             }
         }
     }
@@ -98,6 +139,11 @@
             align-items: center;
             gap: 41rem;
             margin-bottom: 20rem;
+
+            @include mobile {
+                flex-direction: column;
+                gap: 10rem;
+            }
         }
     }
 
@@ -109,6 +155,12 @@
         color: var(--c-grey-subscribe);
         position: relative;
         transition: var(--transition);
+
+        @include mobile {
+            font-size: 20rem;
+            line-height: 120%;
+        }
+
         &:nth-child(2)::before, &:nth-child(2)::after {
             content: "";
             display: block;
@@ -116,6 +168,10 @@
             width: 1rem;
             height: 17rem;
             background: #626381;
+
+            @include mobile {
+                display: none;
+            }
         }
 
         &:nth-child(2)::before {
@@ -139,6 +195,10 @@
         letter-spacing: 0.04em;
         text-align: center;
         color: var(--c-grey-subscribe);
+
+        @include mobile {
+            font-size: 18rem;
+        }
     }
     
 }

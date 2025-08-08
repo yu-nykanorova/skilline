@@ -18,6 +18,10 @@
         @include desktop-small {
             padding: 50rem 30rem 10rem 30rem;
         }
+        @include mobile {
+            padding: 20rem 10rem;
+            gap: 20rem;
+        }
     }
 
     &__nav, &__menu {
@@ -32,6 +36,12 @@
         }
         @include tablet {
             gap:  40rem;
+        }
+    }
+
+    &__nav {
+        @include mobile {
+            gap: 20rem;
         }
     }
 
@@ -68,6 +78,9 @@
         }
         @include tablet-small {
             gap: 10rem;
+        }
+        @include mobile {
+            flex-direction: column;
         }
     }
 

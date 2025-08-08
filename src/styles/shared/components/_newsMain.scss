@@ -6,6 +6,10 @@
         margin-bottom: 40rem;
         display: flex;
         justify-content: center;
+
+        @include mobile {
+            margin-bottom: 20rem;
+        }
         
         img {
             width: 100%;
@@ -25,6 +29,11 @@
         border-radius: 80rem;
         background: var(--c-orange-light-second);
         margin-bottom: 20rem;
+        @include mobile {
+            font-weight: 400;
+            font-size: 18rem;
+            line-height: 120%;
+        }
     }
 
     &__title {
@@ -34,11 +43,21 @@
         line-height: 180%;
         color: var(--c-grey-menu);
         margin-bottom: 20rem;
+        @include mobile {
+            font-size: 24rem;
+            line-height: 120%;
+            margin-bottom: 10rem;
+        }
     }
 
     &__desc {
         font-size: 20rem;
         letter-spacing: 0.02em;
         margin-bottom: 28rem;
+        @include mobile {
+            font-size: 18rem;
+            line-height: 140%;
+            margin-bottom: 15rem;
+        }
     }
 }

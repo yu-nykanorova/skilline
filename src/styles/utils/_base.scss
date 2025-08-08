@@ -32,6 +32,9 @@ body {
 	@include desktop-small {
 		padding-inline: 30rem;
 	}
+	@include mobile {
+		padding: 20rem 10rem;
+	}
 }
 
 .mi {

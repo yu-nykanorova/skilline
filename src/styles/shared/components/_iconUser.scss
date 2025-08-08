@@ -1,9 +1,17 @@
 .icon-user {
     position: relative;
+    display: flex;
+
+    @include mobile {
+        width: 40rem;
+    }
 
     svg {
         position: absolute;
-        bottom: 0;
+        bottom: -5rem;
         right: 0;
+        @include mobile {
+            width: 12rem;
+        }
     }
 }

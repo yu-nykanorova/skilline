@@ -4,6 +4,9 @@
         @include tablet-small {
             padding: 0 30rem;
         }
+        @include mobile {
+            padding: 0 10rem;
+        }
     }
 
     &__for-whom {
@@ -17,6 +20,9 @@
         @include tablet-small {
             padding-inline: 30rem;
         }
+        @include mobile {
+            padding-inline: 10rem;
+        }
         
         
         &-title {
@@ -25,6 +31,12 @@
             line-height: 180%;
             margin-bottom: 20rem;
             text-align: center;
+            @include mobile {
+                font-weight: 500;
+                font-size: 30rem;
+                line-height: 120%;
+                width: 100%;
+            }
         }
         &-desc {
             max-width: 1100rem;
@@ -35,6 +47,11 @@
             margin-inline: auto;
             @include desktop-medium {
                 margin-bottom: 60rem;
+            }
+            @include mobile {
+                margin-bottom: 30rem;
+                font-size: 20rem;
+                line-height: 140%;
             }
         }
         &-list {
@@ -49,6 +66,10 @@
             @include desktop-small {
                 margin-bottom: 120rem;
                 flex-direction: column;
+            }
+            @include mobile {
+                margin-bottom: 60rem;
+                gap: 30rem;
             }
         }
         &-item {
@@ -92,6 +113,11 @@
                 @include desktop-medium {
                     top: 40%;
                 }
+                @include mobile {
+                    font-weight: 500;
+                    font-size: 20rem;
+                    top: calc(50% - 10rem);
+                }
             }
             .item-button {
                 position: absolute;
@@ -110,6 +136,14 @@
                 }
                 @include desktop-medium {
                     top: 60%;
+                }
+                @include mobile {
+                    max-width: initial;
+                    width: 80%;
+                    font-weight: 400;
+                    font-size: 18rem;
+                    line-height: 120%;
+                    top: 70%;
                 }
 
                 &-transparent {
@@ -157,6 +191,10 @@
         @include tablet-small {
             margin-bottom: 80rem;
         }
+        @include mobile {
+            margin-bottom: 30rem;
+            padding: 0 10rem;
+        }
         
         &-info {
             flex: 50%;
@@ -190,6 +228,11 @@
             margin-bottom: 30rem;
             position: relative;
             z-index: 2;
+            @include mobile {
+                font-size: 26rem;
+                line-height: 130%;
+                margin-bottom: 20rem;
+            }
         }
         &-desc {
             font-size: 24rem;
@@ -197,6 +240,11 @@
             margin-bottom: 30rem;
             position: relative;
             z-index: 2;
+            @include mobile {
+                font-size: 18rem;
+                line-height: 140%;
+                margin-bottom: 15rem;
+            }
         }
 
         &-more {
@@ -207,6 +255,11 @@
             text-decoration-skip-ink: none;
             color: var(--c-grey-desc-first);
             transition: var(--transition);
+
+            @include mobile {
+                font-size: 18rem;
+                line-height: 140%;
+            }
 
             &:hover {
                 color: var(--c-blue-first);
@@ -255,5 +308,9 @@
         left: calc(50% - 40rem);
         cursor: pointer;
         z-index: 2;
+        @include mobile {
+            top: calc(50% - 22rem);
+            left: calc(50% - 22rem);
+        }
     }
 }

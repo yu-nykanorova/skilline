@@ -2,9 +2,10 @@
 import { Link } from "react-router-dom";
 import { TextBox } from "../../shared/components/TextBox";
 import React, { useRef } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.scss";
-import "slick-carousel/slick/slick-theme.scss";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 import commentAvatarFirst from '../../assets/image/testimonials/testimonial_smiling_girl.jpg';
 import commentAvatarSecond from '../../assets/image/testimonials/testimonial_writing_girl.jpg';
 
@@ -25,20 +26,7 @@ export const Testimonial = () => {
     }
   ];
 
-  const sliderArr = useRef(null);
-
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    className: "testimonial__box",
-    arrows: false,
-    //autoplay: true,
-    autoplaySpeed: 2500,
-    //pauseOnHover: true
-  };
+  const swiperRef = useRef(null);
   
   return (
     <section className="testimonial">
@@ -64,17 +52,32 @@ export const Testimonial = () => {
               </Link>
             </div>
           </div>
-          <Slider ref={sliderArr} {...settings}>
+
+          <Swiper
+            modules={[Navigation, Autoplay]}
+            spaceBetween={30}
+            slidesPerView={1}
+            loop={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            onSwiper={(swiper) => { swiperRef.current = swiper; }}
+            className="testimonial__box"
+          >
             {comments.map((comment, index) => (
-              <div key={index} className="testimonial__item">
-                <div className="testimonial__image">
-                  <img src={comment.image} alt="smilimg girl with books" />
+              <SwiperSlide key={index}>
+                <div className="testimonial__item">
+                  <div className="testimonial__image">
+                    <img src={comment.image} alt="smiling girl with books" />
+                  </div>
+                  <TextBox className="testimonial__text-box" text={comment.text} name={comment.name} reviews={comment.reviews} />
                 </div>
-                <TextBox className="testimonial__text-box" text={comment.text} name={comment.name} reviews={comment.reviews} />
-              </div>
+              </SwiperSlide>
             ))}
-          </Slider>
-          <div className="testimonial__right-arrow" onClick={() => sliderArr.current.slickNext()}>
+          </Swiper>
+
+          <div className="testimonial__right-arrow" onClick={() => swiperRef.current?.slideNext()}>
             <svg width="18" height="24" viewBox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M2 2L14 12L2 22" stroke="#1EA4CE" strokeWidth="4" />
             </svg>  

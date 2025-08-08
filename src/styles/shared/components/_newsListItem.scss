@@ -10,6 +10,9 @@
     @include tablet-small {
         flex-direction: column;    
     }
+    @include mobile {
+        gap: 10rem;
+    }
 
     &__image {
         position: relative;
@@ -38,6 +41,11 @@
         color: var(--c-grey-menu);
         background: var(--c-orange-light-second);
         border-radius: 80rem;
+
+        @include mobile {
+            font-size: 16rem;
+            line-height: 120%;
+        }
     }
 
     &__info {
@@ -49,10 +57,24 @@
         font-size: 22rem;
         line-height: 180%;
         color: var(--c-grey-menu);
+        cursor: pointer;
+
+        @include mobile {
+            line-height: 120%;
+            margin-bottom: 5rem;
+        }
+
+        &:hover {
+            color: var(--c-blue-first);
+        }
     }
 
     &__desc {
         font-size: 20rem;
         letter-spacing: 0.02em;
+        @include mobile {
+            line-height: 120%;
+            font-size: 18rem;
+        }
     }
 }
