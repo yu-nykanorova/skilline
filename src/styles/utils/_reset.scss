@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  outline: 1px solid red !important;
   }
   /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
   
@@ -215,6 +214,7 @@
   [type="reset"],
   [type="submit"] {
     -webkit-appearance: button;
+    appearance: button;
   }
   
   /**
@@ -307,6 +307,7 @@
   
   [type="search"] {
     -webkit-appearance: textfield; /* 1 */
+    appearance: textfield;
     outline-offset: -2px; /* 2 */
   }
   

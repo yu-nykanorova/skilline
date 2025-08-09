@@ -118,8 +118,10 @@
         }
         @include mobile {
             padding: 8rem 10rem;
-            font-size: 16rem;
+            font-size: 14rem;
             font-weight: 400;
+            width: 60%;
+            text-align: center;
         }
     }
 
@@ -132,6 +134,12 @@
         }
         @include desktop-small {
             gap: 12rem;
+        }
+        @include mobile {
+            border: 2rem solid var(--c-orange-first);
+            width: 60%;
+            border-radius: 80rem;
+            gap: 5rem;
         }
     }
 
@@ -148,7 +156,7 @@
             font-size: 18rem;
         }
         @include mobile {
-            font-size: 16rem;
+            font-size: 14rem;
         }
     }
 

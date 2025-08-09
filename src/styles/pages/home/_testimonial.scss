@@ -118,6 +118,7 @@
         }
         @include mobile {
             padding: 10rem 0 10rem 20rem;
+            max-width: 90%;
         }
     }
 
@@ -173,10 +174,15 @@
             padding: 0 150rem 91rem 0;
         }
         @include desktop-medium {
-
+            padding: 0 100rem 70rem 0;
         }
         @include desktop-small {
-
+            padding: 0 30rem 60rem 30rem;
+            max-width: initial;
+            width: 100%;
+        }
+        @include mobile {
+            padding: 0 10rem 60rem 10rem;
         }
     }
 
@@ -188,7 +194,7 @@
         padding-inline: 2rem;
 
         @include desktop-for-skillineIs-section {
-          
+            height: auto;
         }
         @include desktop-small {
         }
@@ -218,16 +224,15 @@
         right: 0;
         margin-right: 2rem;
         @include desktop-for-skillineIs-section {
-
-        }
-        @include desktop-medium {
-
+            right: initial;
+            left: 10%;
         }
         @include desktop-small {
-
+            bottom: -10rem;
         }
         @include mobile {
-
+            left: 5%;
+            right: 5%;
         }
     }
 
@@ -238,7 +243,7 @@
         background: var(--c-white);
         border-radius: 100%;
         box-shadow: 0 4px 60px 0 rgba(41, 44, 124, 0.15);
-        right: 210rem;
+        right: 23%;
         top: 35%;
         font-size: 24rem;
         font-weight: 600;
@@ -248,18 +253,22 @@
         cursor: pointer;
         z-index: 2;
         @include desktop-for-skillineIs-section {
-
+            right: 15%;
         }
         @include desktop-medium {
-
+            right: 10%;
         }
         @include desktop-small {
+            right: 0;
+            top: 58%;
         }
-        @include tablet-small {
-
+        @include tablet {
+            top: 60%;
         }
         @include mobile {
-
+            width: 55rem;
+            height: 55rem;
+            top: 63%;
         }
     }
 }
@@ -268,7 +277,10 @@
     width: 100% !important; 
     box-sizing: border-box; 
     margin: 0 !important;
-    padding: 0 !important;
+    padding: 0 0 60rem 0;
+    
+    @include desktop-small {
+    }
   }
 
 

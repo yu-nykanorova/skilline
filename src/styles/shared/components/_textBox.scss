@@ -7,13 +7,17 @@
     position: relative;
     @include desktop-for-skillineIs-section {
         padding: 30rem 40rem;
-        max-width: 540rem;
+        max-width: 550rem;
     }
     @include desktop-medium {
-        max-width: 100%;
+        padding: 20rem 30rem;
+        max-width: 80%;
     }
     @include tablet-small {
         padding: 10rem 20rem;
+    }
+    @include mobile {
+        max-width: 90%;
     }
     &::before {
         content: "";
@@ -44,6 +48,10 @@
         @include tablet-small {
             font-size: 16rem;
             margin-bottom: 10rem;
+            line-height: 140%;
+        }
+        @include mobile {
+            font-size: 14rem;
         }
 
         &::before {

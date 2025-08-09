@@ -1,43 +1,41 @@
-.header {
-    background: var(--c-orange-light-first);
-    position: relative;
+ .header {
+     background: var(--c-orange-light-first);
+     position: relative;
 
-    &-container {
-        max-width: 1920rem;
-        padding: 60rem 126rem 20rem 100rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+     &-container {
+         max-width: 1920rem;
+         padding: 60rem 126rem 20rem 100rem;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
 
-        @include desktop-for-skillineIs-section {
-            padding: 60rem 80rem 20rem 60rem;
-        }
-        @include desktop-medium {
-            padding: 60rem 60rem 15rem 60rem;
-        }
-        @include desktop-small {
-            padding: 50rem 30rem 10rem 30rem;
-        }
-        @include mobile {
-            padding: 20rem 10rem;
-            gap: 20rem;
-        }
-    }
+         @include desktop-for-skillineIs-section {
+             padding: 60rem 80rem 20rem 60rem;
+         }
+         @include desktop-medium {
+             padding: 60rem 60rem 15rem 60rem;
+         }
+         @include desktop-small {
+             padding: 50rem 30rem 10rem 30rem;
+         }
+         @include mobile {
+             padding: 20rem 10rem;
+             gap: 20rem;
+         }
+     }
 
-    &__nav, &__menu {
-        display: flex;
-        gap: 80rem;
-        align-items: center;
+     &__nav, &__menu {
+         display: flex;
+         justify-content: space-between;
+         gap: 80rem;
+         align-items: center;
         @include desktop-medium {
             gap: 50rem;
         }
         @include desktop-small {
             gap: 30rem;
         }
-        @include tablet {
-            gap:  40rem;
-        }
-    }
+     }
 
     &__nav {
         @include mobile {
@@ -46,10 +44,27 @@
     }
 
     &__menu {
+        transition: transform 0.3s ease, opacity 0.3s ease;
         @include tablet {
             position: absolute;
-            top: -100%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            flex-direction: column;
+            background: rgba(41, 44, 124, 0.7);
+            padding: 20rem;
+            transform: translateY(-150%);
+            opacity: 0;
+            pointer-events: none;
         }
+
+        &.is-open {
+            @include tablet {
+              transform: translateY(0);
+              opacity: 1;
+              pointer-events: auto;
+            }
+          }
     }
 
     &__link {
@@ -57,22 +72,50 @@
         font-size: 22rem;
         letter-spacing: 0.02em;
         color: var(--c-grey-menu);
+
+        @include tablet {
+            color: var(--c-orange-light-first);
+        }
     }
 
-    &__burger {
-        display: none;
+     &__burger {
+         display: none;
+        
+        &.is-active {
+            position: absolute;
+            top: 10rem;
+            right: 10rem;
+            
+            .burger-menu {
+                span {
+                    background: transparent;
+                }
+                &::before {
+                    top: 50%;
+                    transform: translateY(-50%) rotate(45deg);
+                    background: var(--c-orange-light-first);
+                }
+                &::after {
+                    bottom: auto;
+                    top: 50%;
+                    transform: translateY(-50%) rotate(-45deg);
+                    background: var(--c-orange-light-first);
+                }
+            }
+        }
+
         @include tablet {
             display: block;
         }
-    }
+     }
 
-    &__buttons {
-        display: flex;
-        gap: 34rem;
-        align-items: center;
+     &__buttons {
+         display: flex;
+         gap: 34rem;
+         align-items: center;
         @include desktop-small {
             gap: 20rem;
-        }
+         }
         @include tablet {
             gap: 40rem;
         }
@@ -82,10 +125,10 @@
         @include mobile {
             flex-direction: column;
         }
-    }
+     }
 
-    &__login-button, &__signup-button {
-        width: 160rem;
+     &__login-button, &__signup-button {
+         width: 160rem;
         font-weight: 500;
         font-size: 22rem;
         letter-spacing: 0.02em;
@@ -95,13 +138,13 @@
 
         &:hover {
             transform: scale(1.05);
-        }
+         }
 
         @include tablet-small {
             width: 120rem;
             font-size: 16rem;
         }
-    }
+     }
 
     &__login-button {
         padding: 13rem 49rem;
@@ -127,4 +170,4 @@
             padding: 10rem 24rem;
         }
     }
-}
+ }

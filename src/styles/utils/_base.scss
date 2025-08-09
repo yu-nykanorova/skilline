@@ -65,8 +65,16 @@ body {
 .under-construction {
 	padding: 20% 30%;
 	text-align: center;
+
+	@include tablet-small {
+		padding: 10%;
+	}
+
 	p {
 		color: red;
 		font-size: 36rem;
+		@include tablet-small {
+			font-size: 24rem;
+		}
 	}
 }
